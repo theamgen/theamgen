@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="zxx">
+ <head>
+        <!-- meta tag -->
+        <meta charset="utf-8" />
+        <title>AmGen - Official Site</title>  
+        <meta name="description" content="" />
+        <!-- responsive tag -->
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- favicon -->
+        <link rel="apple-touch-icon" href="./assets/images/favicon.png" />
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
+        <!-- Bootstrap v4.4.1 css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+        <!-- animate css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+        <!-- magnific css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css" />
+        <!-- owl.carousel css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css" />
+        <!-- off canvas css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/off-canvas.css" />
+        <!-- flaticon css  -->
+        <link rel="stylesheet" type="text/css" href="assets/css/ico-moon-fonts.css" />
+        <!-- spacing css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/sc-spacing.css" />
+        <!-- style css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <!-- responsive css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+        <style>
+            .custom-price-width{
+                width: 70%;
+            }
+            .fixed-header{
+                position: fixed;
+                top: 0;
+                background-color: beige;
+            }
+            @media (max-width:767px){
+                .custom-price-width{
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!--Preloader area start here-->
+        <section class="loader_first">
+            <div class="circular-spinner"></div>
+        </section>
+        <!--Preloader area End here-->
+
+        <!--Header Start-->
+        <header id="gamfi-header" class="gamfi-header-section transparent-header">
+            <div class="menu-area menu-sticky">
+                <div class="container" style="min-width: 100%;">
+                    <div class="heaader-inner-area d-flex justify-content-between align-items-center">
+                        <div class="gamfi-logo-area d-flex justify-content-between align-items-center">
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/images/logo-full-white.png" alt="logo" /></a>
+                            </div>
+                            <div class="header-menu">
+                                <ul class="nav-menu">
+                                    <li><a href="#DataScience">Data Science</a></li>
+                                    <li><a href="#why">Why</a></li>
+                                    <li><a href="#PSP">PSP</a></li>
+                                    <li><a href="#token">Tokenomics</a></li>
+                                    <li><a href="#road">Roadmap</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="gamfi-btn-area">
+                            <ul>
+                                <li>
+                                    <a id="nav-expander" class="nav-expander bar" href="#">
+                                        <div class="bar">
+                                            <span class="dot1"></span>
+                                            <span class="dot2"></span>
+                                            <span class="dot3"></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="buy-token">
+                                    <a class="readon black-shape" href="#">
+                                        <span class="btn-text">Buy Token </span>
+                                        <i class="icon-arrow_down"></i>
+                                        <span class="hover-shape1"></span>
+                                        <span class="hover-shape2"></span>
+                                        <span class="hover-shape3"></span>
+                                    </a>
+                                    <ul>
+                                        <li><a href="https://pancakeswap.finance/info/token/0xc05f9174eb7f8b5102d8c83f441a5f65a684aefc" target="_blank"><img src="assets/images/icons/pancake.png" alt="pancake"> PancakeSwap</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button type="button" class="readon white-btn hover-shape" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/images/icons/connect.png" alt="Icon"> 
+                                        <span class="btn-text">Connect </span>
+                                        <span class="hover-shape1"></span>
+                                        <span class="hover-shape2"></span>
+                                        <span class="hover-shape3"></span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Canvas Mobile Menu start -->
+            <nav class="right_menu_togle mobile-navbar-menu" id="mobile-navbar-menu">
+                <div class="close-btn">
+                    <a id="nav-close2" class="nav-close">
+                        <div class="line">
+                            <span class="line1"></span>
+                            <span class="line2"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="sidebar-logo mb-30">
+                    <a href="index.html"><img src="assets/images/logo-dark.png" alt=""></a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#features">Data Science</a></li>
+                    <li><a href="#PSP">PSP</a></li>
+                    <li><a href="#why">Why</a></li>
+                    <li><a href="#token">Tokenomics</a></li>
+                    <li><a href="#road">Roadmap</a></li>
+                    <li>
+                        <a href="#">Buy Token</a>
+                        <ul class="sub-menu">
+                            <li><a href="https://pancakeswap.finance/info/token/0xc05f9174eb7f8b5102d8c83f441a5f65a684aefc" target="_blank">PancakeSwap</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" class="readon black-shape-big connectWalletBtnforMobile" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/images/icons/connect_white.png" alt="Icon">
+                            <span class="btn-text">Connect </span>
+                            <span class="hover-shape1"></span>
+                            <span class="hover-shape2"></span>
+                            <span class="hover-shape3"></span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Canvas Menu end -->
+        </header>
+        <!--Header End-->
+
+        <!-- Banner Section Start -->
+        <div id="sc-banner" class="sc-banner banner-bg position-relative">
+            <div class="container">
+                <div class="banner-content text-center">
+                    <img class="banner-icon wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2500ms" src="assets/images/icons/icon1.png" alt="icon-image"/>
+                    <h1 class="banner-title wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2500ms">
+                        Welcome to AMG:
+                    </h1>
+                    <p>An easy, smart and innovative method to invest in virtual assets.
+                       </p>
+                    <!-- <div class="description wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2500ms">
+                       
+                    </div> -->
+                    <a class="banner-btn wow fadeInUp black-shape-big" data-wow-delay="300ms" data-wow-duration="2500ms" href="https://pancakeswap.finance/info/token/0xc05f9174eb7f8b5102d8c83f441a5f65a684aefc" target="_blank">
+                        <span class="btn-text">Invest Now</span>
+                        <span class="hover-shape1"></span>
+                        <span class="hover-shape2"></span>
+                        <span class="hover-shape3"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Banner Section End -->
+
+        <!-- About Section Start -->
+        <div class="gamfi-about-secion pb-80 md-pb-45">
+            <div class="container">
+                <div id="about" class="container">
+                    <div class="footer-cta-area text-center active-shape hover-shape-inner" style="padding: 70px 20px 80px 30px;">
+                        <h2 class="title mb-15">
+                            ABOUT AMG: 
+                        </h2>
+                        <div class="dsc mb-40 md-mb-30">
+                            <p> AMG Inspiring folks to utilize a single currency for virtual world. AMG is a utility token based on the BEP20 that will allow everyone to participate in virtual world, regardless of the amount invested. You determine and vote on how your assets grow. You will be able to purchase a huge variety of assets like Real Estate properties, cars, wearable’s, and consumables and more exciting things from the marketplace that we will launch. It’s a huge opportunity for everyone to take the next step into Blockchain Virtual World.</p>
+                        </div>
+                        <span class="border-shadow shadow-1"></span>
+                        <span class="border-shadow shadow-2"></span>
+                        <span class="border-shadow shadow-3"></span>
+                        <span class="border-shadow shadow-4"></span>
+                        <span class="hover-shape-bg hover_shape1"></span>
+                        <span class="hover-shape-bg hover_shape2"></span>
+                        <span class="hover-shape-bg hover_shape3"></span>
+                    </div>
+                </div>
+                <div id="DataScience" class="pt-130 md-pt-80 heading-area align-items-center d-flex justify-content-between mb-30">
+                    <div class="sec-heading">
+                        <div class="sub-inner mb-15">
+                            <span class="sub-title"></span>
+                            <img class="heading-left-image" src="assets/images/icons/steps.png" alt="Steps-Image" />
+                        </div>
+                        <h2 class="title">DATA SCIENCE:</h2>
+                    </div>
+                </div>
+                <div class="participate-area row">
+                    <div class="col-lg-1">
+                        <div class="participate-item d-flex wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+                            <div class="number-image">
+                                <img src="assets/images/icons/participate-image.png" alt="Participate-Image" />
+                            </div>
+                            <div class="participate-info">
+                                <!-- <h4 class="mb-10">Trading Platform</h4> -->
+                                <p class="description" style="width: 268px;">
+                                    AMG: 0.55$                <br>                                                         
+                                    Total Supply: 99,000,000 <br> 
+                                    Initial Liquidity provided: 30 BNB          
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-4">
+                        <div class="participate-item d-flex wow fadeInUp mr-30" data-wow-delay="200ms" data-wow-duration="2000ms">
+                            <div class="number-image">
+                                <img src="assets/images/icons/participate-image2.png" alt="Participate-Image" />
+                            </div>
+                            <div class="participate-info">
+                                <h4 class="mb-10">Security Features</h4>
+                                <p class="description">
+                                    AmGen trading platform will be underpinned by a robust matching engine for quick transactions, with minimum latency. Leading security features like two-factor authentication,etc.
+                                </p>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="col-lg-4">
+                        <div class="participate-item d-flex wow fadeInUp mr-20" data-wow-delay="300ms" data-wow-duration="2500ms">
+                            <div class="number-image">
+                                <img src="assets/images/icons/participate-image3.png" alt="Participate-Image" />
+                            </div>
+                            <div class="participate-info">
+                                <h4 class="mb-10">Referral Program</h4>
+                                <p class="description">
+                                    AmGen trading platform will be integrated with a referral program of up to two levels; users will get incentivized for referring AmGen trading platform to their family, friends, and others.
+                                </p>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- About Section End -->
+
+        <!-- Project Section Start -->
+        <div id="why" class="gamfi-project-section main-project-area">
+            <div class="container">
+                <div class="sec-inner align-items-center d-flex justify-content-between mb-30">
+                    <div class="sec-heading">
+                        <div class="sub-inner mb-15">
+                            <span class="sub-title"></span>
+                            <img class="heading-left-image" src="assets/images/icons/steps.png" alt="Steps-Image" />
+                        </div>
+                        <h2 class="title">WHY THE BLOCKCHAIN?      </h2>
+                        <p> Blockchain technology has been widely accepted in recent years and will surely be widespread in the near future. Blockchain is the right ally for a forward-looking project like AMG. It permits information to be stored and transferred (in this case, transactions) without passing via a central intermediate institution.
+                            Above all, the blockchain makes it possible to link individuals, making it feasible for anybody worldwide the world to engage in a project like AMG. Indeed, it would seem difficult for an American to invest in real estate in Europe without going through all the administrative and banking obstacles that blockchain can address.
+                            </p>
+                    </div>
+                </div>
+                <!-- <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project-item hover-shape-border">
+                            <div class="project-info d-flex">
+                                <a href="javascript:void(0)">
+                                    <img src="assets/images/project/project-image.png" alt="Project-Image"/>
+                                </a>
+                                <div class="project-auother">
+                                    <h4 class="mb-10"><a href="javascript:void(0)">Eco System</a></h4>
+                                    <div class="dsc">Ensures usability</div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header d-flex justify-content-between">
+                                    <div class="heading-title">
+                                        <h4></h4>
+                                    </div>
+                                </div>
+                                <div class="project-media">
+                                    <ul class="project-listing">
+                                        <li>AmGen has many advantages over its contemporaries as it is launched with a fully-functional eco-system that ensures usability from the very first day.</li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <span class="border-shadow shadow-1"></span>
+                            <span class="border-shadow shadow-2"></span>
+                            <span class="border-shadow shadow-3"></span>
+                            <span class="border-shadow shadow-4"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project-item hover-shape-border">
+                            <div class="project-info d-flex">
+                                <a href="javascript:void(0)">
+                                    <img src="assets/images/project/project-image2.png" alt="Project-Image"/>
+                                </a>
+                                <div class="project-auother">
+                                    <h4 class="mb-10"><a href="javascript:void(0)">Transactions</a></h4>
+                                    <div class="dsc">Extremely Significant</div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header d-flex justify-content-between">
+                                    <div class="heading-title">
+                                        <h4></h4>
+                                    </div>
+                                </div>
+
+                                <div class="project-media">
+                                    <ul class="project-listing">
+                                        <li>Driving transactions on a number of platforms, internationally, including Shopping, Trading, Travel, Remittance, Merchants, Staking, and many more.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <span class="border-shadow shadow-1"></span>
+                            <span class="border-shadow shadow-2"></span>
+                            <span class="border-shadow shadow-3"></span>
+                            <span class="border-shadow shadow-4"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project-item hover-shape-border">
+                            <div class="project-info d-flex">
+                                <a href="javascript:void(0)">
+                                    <img src="assets/images/project/project-image3.png" alt="Project-Image"/>
+                                </a>
+                                <div class="project-auother">
+                                    <h4 class="mb-10"><a href="javascript:void(0)">Referral & Reward</a></h4>
+                                    <div class="dsc">Increase Value</div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header d-flex justify-content-between">
+                                    <div class="heading-title">
+                                        <h4></h4>
+                                    </div>
+                                </div>
+                                <div class="project-media">
+                                    <ul class="project-listing">
+                                        <li>It will also be the backbone of AmGen Referral & Reward Program. The acceptance and usage of AmGen will increase its popularity as well as value.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <span class="border-shadow shadow-1"></span>
+                            <span class="border-shadow shadow-2"></span>
+                            <span class="border-shadow shadow-3"></span>
+                            <span class="border-shadow shadow-4"></span>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- Project Section End -->
+
+        <!-- Previous Section Start -->
+        <div id="PSP" class="gamfiRoadMap">
+        <div class="gamfi-previous-section gamfi-project-section ">
+            <div class="container">
+                <div class="sec-inner align-items-center d-flex justify-content-between  mb-50">
+                    <div class="sec-heading">
+                        <div class="sub-inner mb-15">
+                            <span class="sub-title">AmGen</span>
+                            <img class="heading-left-image" src="assets/images/icons/steps.png" alt="Steps-Image" />
+                        </div>
+                        <h2 class="title mb-0 xs-pb-20">Project Strong Points:</h2>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <a href="#">
+                            <div class="previous-item hover-shape-border hover-shape-inner">
+                                <div class="previous-gaming">
+                                    <div class="previous-image">
+                                        <img width="70" height="70" src="assets/images/supply.png" alt="Previous-Image" />
+                                    </div>
+                                    <div class="previous-price custom-price-width">
+                                        <h4 class="mb-10">LIMITED AND DECREASING SUPPLY</h4>
+                                        <div class="dsc">The total number of tokens is a maximum of 99,000,000 AMG. This number will never be increased because the contract does not offer the possibility to change this value. On the contrary, through the burn from transaction fees and tokens redeemed by AMG Plc, which will take place periodically and forever, the number of available tokens will keep decreasing.
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="border-shadow shadow-1"></span>
+                                <span class="border-shadow shadow-2"></span>
+                                <span class="border-shadow shadow-3"></span>
+                                <span class="border-shadow shadow-4"></span>
+                                <span class="hover-shape-bg hover_shape1"></span>
+                                <span class="hover-shape-bg hover_shape2"></span>
+                                <span class="hover-shape-bg hover_shape3"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <a href="#">
+                            <div class="previous-item hover-shape-border hover-shape-inner">
+                                <div class="previous-gaming">
+                                    <div class="previous-image">
+                                        <img  width="70" height="70" src="./assets/images/fb-group.png" alt="Previous-Image" />
+                                    </div>
+                                    <div class="previous-price custom-price-width">
+                                        <h4 class="mb-10"> PUBLIC TEAM</h4>
+                                        <div class="dsc">The identity of all project team members is public. The members are presented below.
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="border-shadow shadow-1"></span>
+                                <span class="border-shadow shadow-2"></span>
+                                <span class="border-shadow shadow-3"></span>
+                                <span class="border-shadow shadow-4"></span>
+                                <span class="hover-shape-bg hover_shape1"></span>
+                                <span class="hover-shape-bg hover_shape2"></span>
+                                <span class="hover-shape-bg hover_shape3"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <a href="#">
+                            <div class="previous-item hover-shape-border hover-shape-inner">
+                                <div class="previous-gaming">
+                                    <div class="previous-image">
+                                        <img  width="70" height="70" src="assets/images/marketplace-logo.png" alt="Previous-Image" />
+                                    </div>
+                                    <div class="previous-price custom-price-width">
+                                        <h4 class="mb-10">  AMG MARKETPLACE</h4>
+                                        <div class="dsc">We will launch the AMG marketplace so that you can purchase a huge variety of assets safely. Those assets will be yours so you can benefit from every single one of them. </div>
+                                    </div>
+                                </div>
+                                <span class="border-shadow shadow-1"></span>
+                                <span class="border-shadow shadow-2"></span>
+                                <span class="border-shadow shadow-3"></span>
+                                <span class="border-shadow shadow-4"></span>
+                                <span class="hover-shape-bg hover_shape1"></span>
+                                <span class="hover-shape-bg hover_shape2"></span>
+                                <span class="hover-shape-bg hover_shape3"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <a href="javascript:void(0)">
+                            <div class="previous-item hover-shape-border hover-shape-inner">
+                                <div class="previous-gaming">
+                                    <div class="previous-image">
+                                        <img  width="70" height="70" src="assets/images/diversification.png" alt="Previous-Image" />
+                                    </div>
+                                    <div class="previous-price custom-price-width">
+                                        <h4 class="mb-10"> ASSET DIVERSIFICATION   </h4>
+                                        <div class="dsc"> 
+                                            Where other cryptocurrency initiatives allow tokenization of particular properties (i.e. purchase of a share of a specific property), AMG offers a participation in the fund while lowering the risk of fees required for holding the asset. The risk is consequently greatly decreased compared to a direct investment in a single property.
+
+
+                                        </div>
+                                </div>
+                                <span class="border-shadow shadow-1"></span>
+                                <span class="border-shadow shadow-2"></span>
+                                <span class="border-shadow shadow-3"></span>
+                                <span class="border-shadow shadow-4"></span>
+                                <span class="hover-shape-bg hover_shape1"></span>
+                                <span class="hover-shape-bg hover_shape2"></span>
+                                <span class="hover-shape-bg hover_shape3"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                            <a href="#">
+                                <div class="previous-item hover-shape-border hover-shape-inner">
+                                    <div class="previous-gaming">
+                                        <div class="previous-image">
+                                            <img width="70" height="70" src="assets/images/blockchain_course.png" alt="Previous-Image" />
+                                        </div>
+                                        <div class="previous-price custom-price-width">
+                                            <h4 class="mb-10"> BLOCKCHAIN</h4>
+                                            <div class="dsc">
+                                                Blockchain allows people from all over the world to invest in AMG, breaking down all borders.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="border-shadow shadow-1"></span>
+                                    <span class="border-shadow shadow-2"></span>
+                                    <span class="border-shadow shadow-3"></span>
+                                    <span class="border-shadow shadow-4"></span>
+                                    <span class="hover-shape-bg hover_shape1"></span>
+                                    <span class="hover-shape-bg hover_shape2"></span>
+                                    <span class="hover-shape-bg hover_shape3"></span>
+                                </div>
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Previous Section End -->
+
+        <!-- Tokenomics Section Start -->
+
+        <div id="token" class="gamfi-tokenomics-section tokenomics-left-right-shape pb-115 pt-115 md-pt-75 md-pb-45">
+            <div class="container">
+                <div class="sec-heading">
+                    <div class="sub-inner mb-15">
+                        <span class="sub-title">statistics</span>
+                        <img class="heading-left-image" src="assets/images/icons/steps.png" alt="Steps-Image" />
+                    </div>
+                    <h2 class="title">Tokenomics</h2>
+                </div>
+                <div class="tokenomics-item d-flex">
+                    <div class="tokenomics-menu pr-60">
+                        <div class="dsc">Investors</div>
+                        <h5>6 Millions</h5>
+                    </div>
+                    <div class="tokenomics-menu pr-63">
+                        <div class="dsc">Burning Supply</div>
+                        <h5>3%</h5>
+                    </div>
+                    <div class="tokenomics-menu pr-65">
+                        <div class="dsc">Company Reserve</div>
+                        <h5>9 Millions</h5>
+                    </div>
+                    <div class="tokenomics-menu pr-95">
+                        <div class="dsc">Strategic Partners</div>
+                        <h5>7 Millions</h5>
+                    </div>
+                    <div class="tokenomics-menu pr-105">
+                        <div class="dsc">Team-AMG</div>
+                        <h5>9.9 Millions (Distributed over 3 years )</h5>
+                    </div>
+                </div>
+                <div class="tokenomics-image">
+                    <img src="assets/images/project/tokenomices-image.jpg" alt="Tokenomics-Image" />
+                </div>
+            </div>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-12">
+
+                        <p> <b style="color: goldenrod;">  Remaining Supply-</b>  64.13 million (after the first 3% burn takes place)</p>
+                        <p> <b style="color: goldenrod;"> INITIAL TOTAL SUPPLY –</b> 99 million AMG</p>
+                         <span style="color:goldenrod;"><p> <b> Note:</b> </p></span> 
+                        
+                       <p><b style="color: goldenrod;"> Team-AMG: </b>   Share for the project team. The tokens are issued progressively and periodically to members over a period of 3 years.</p>
+                       <p>  <b style="color: goldenrod;"> Strategic Partners:</b>  Share for the AMG’s partner firms and cryptographic initiatives..</p>
+                        <p> AMG is a deflationary token, which implies that the supply in circulation continuously dropping over time through   token burning. This is paired with the inability to produce fresh tokens.
+                            More information about the total supply in circulation in real-time as well as the different carriers is available on the BSCScan
+                            <p style="color: goldenrod;">*Initial statement of amounts allocated to each category.</p>
+                            .</p>
+
+
+                        <h4>Binance Smart Chain</h4>
+                        <p><a href="https://bscscan.com/token/0xc05f9174eb7f8b5102d8c83f441a5f65a684aefc" target="_blank">https://bscscan.com/token/0xc05f9174eb7f8b5102d8c83f441a5f65a684aefc</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tokenomics Section End -->
+        <div class="TeamDetailsSect">
+            <div class="TeamDetailsContainer">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="TeamDetailsImg">
+                            <img src="assets/images/doc-a.png" alt="img" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-7 d-flex align-items-center">
+                        <div class="TeamMembersInfo">
+                            <h2>WHITE PAPER:</h2>
+                            <p>AMG approached the market with the hope of creating virtual assets accessible to anyone.
+                                The boring ordinary physical life scaled up to a virtual level, with the help of AMG we minimized the problems you face regarding investing.
+                                The democratization and expansion of the AMG will have a huge role in the virtual world industry.
+                                </p>
+                            
+                           
+                            <a class="banner-btn wow fadeInUp black-shape-big" data-wow-delay="300ms" data-wow-duration="2500ms" href="./assets/AMGwhitepaper.pdf" target="_blank">
+                                <span class="btn-text">CHECK OUT!</span>
+                                <span class="hover-shape1"></span>
+                                <span class="hover-shape2"></span>
+                                <span class="hover-shape3"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Roadmap start -->
+
+        <div id="road" class="gamfiRoadMap">
+            <div class="RoadMapSect">
+                <div class="container RoadMapContainer">
+                    <div class="sec-heading">
+                        <div class="sub-inner mb-15">
+                            <span class="sub-title">AmGen</span>
+                            <img class="heading-left-image" src="assets/images/icons/steps.png" alt="Steps-Image" />
+                        </div>
+                        <h2 class="title">THE ROADMAP TO SUCCESS:</h2>
+                        <p style="margin-top: -30px;">We have aim in mind of changing the face of existing digital Currency model with Decentralized, Fast and Transparent Crypto Currency Model with AmGen.</p>
+                    </div>
+                    <div class="Roadmap2021">
+                        <div class="roadmap2021Divider">
+                            <span>Roadmap</span>
+                        </div>
+                        <div class="row m-0">
+                            <div class="col-md-6">
+                                <div class="RodmapConetent RodmapLeftConetent">
+                                    <div class="RodmapConetentbox RodmapConetentbox1">
+                                        <h3>Q1 - 2022</h3>
+                                        <ul>
+                                            <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="icon" class="img-fluid"></span> Pre-sales Platform listings (All the funds raised during pre-sale are put in  < Liquidity Pool) <br>
+                                                </li>
+                                            <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="icon" class="img-fluid"></span> Key partnerships <br>
+                                                </li>
+                                            <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="icon" class="img-fluid"></span>Creation of the firm <br>
+                                                </li>
+                                            <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="icon" class="img-fluid"></span>(Registration in the commercial registry) <br>
+                                                </li>
+                                            <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="icon" class="img-fluid"></span>Launch on DeFi Exchange <br>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="RodmapConetent RodmapRightConetent">
+                                    <div class="RodmapConetentbox RodmapConetentbox2">
+                                        <h3>Q2-2022:</h3>
+                                        <ul>
+                                            <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="icon" class="img-fluid"></span>Launch of AMG asset marketplace <br>
+                                                </li>
+                                            <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="icon" class="img-fluid"></span>Launch on other platforms <br>
+                                                </li>
+                                            <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="icon" class="img-fluid"></span>Financial planning and target setting <br>
+                                                </li>
+                                            <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="icon" class="img-fluid"></span>Purchase of the first asset <br>
+                                                </li>
+                                            <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="icon" class="img-fluid"></span>Increasing the marketing Budget <br>
+                                                </li>
+                                            <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="icon" class="img-fluid"></span>Increasing Liquidity <br>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="RodmapConetent RodmapLeftConetent">
+                                    <div class="RodmapConetentbox RodmapConetentbox3">
+                                        <h3>Q3-2022:</h3>
+                                        <ul>
+                                            <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="icon" class="img-fluid"></span>Switching liquidity from BNB to BUSD* <br>
+                                                </li>
+                                            <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="icon" class="img-fluid"></span>Key partnerships between traditional real estate and blockchain <br>
+                                                </li>
+                                            <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="icon" class="img-fluid"></span>Expansion of payment methods  <br>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="RodmapConetent RodmapRightConetent">
+                                    <div class="RodmapConetentbox RodmapConetentbox4">
+                                        <h3>Q1 -2023:</h3>
+                                        <ul>
+                                            <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="icon" class="img-fluid"></span>Major listing <br> <br> 
+                                                </li>
+                                            <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="icon" class="img-fluid"></span>Buying properties <br> <br> 
+                                                </li>
+                                            <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="icon" class="img-fluid"></span>Preparing for Ethereum 2.0 support (cross-chain) <br> <br> 
+                                               
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        <!-- Roadmap end -->
+        <!-- Team Section Start -->
+
+        <div class="gamfi-team-section pt-115 pb-85 md-pt-75 md-pb-42">
+            <div class="container">
+                <div class="sec-heading text-center mb-55">
+                    <div class="sub-inner  mb-15">
+                        <img class="heading-left-image" src="assets/images/icons/steps2.png" alt="Steps-Image" />
+                        <span class="ml-10 mr-10 sub-title">Team Members</span>
+                        <img class="heading-right-image" src="assets/images/icons/steps.png" alt="Steps-Image" />
+                    </div>
+                    <h2 class="title">Meet our crew:</h2>
+                    <p>We are a youthful, highly motivated group of individuals surrounded by specialists. With a passion for both real estate and crypto-currencies, integrating the two seemed like a natural fit. Our goal is to use blockchain and crypto-currencies to make real estate accessible to everyone.
+                        AMG's long-term ambition is to create a real estate empire in which anybody may invest.
+                        </p>
+                </div>
+                <div class="row sec-heading mb-55">
+                    <div class="container">
+                        <div class="footer-cta-area text-center active-shape hover-shape-inner p-5">
+                            <img src="assets/images/team/team-09.jpg" alt="Team-image" />
+                            
+                            <h2 class="title mb-15">
+                                EKOW M ONUMAH
+                            </h2>
+                            <div class="dsc mb-40 md-mb-30">
+                                Chairman of AmGen and Entrepreneur <br>
+                                AmGen is founded by EKOW M ONUMAH who is a dynamic entrepreneur.
+                            </div>
+                            <span class="border-shadow shadow-1"></span>
+                            <span class="border-shadow shadow-2"></span>
+                            <span class="border-shadow shadow-3"></span>
+                            <span class="border-shadow shadow-4"></span>
+                            <span class="hover-shape-bg hover_shape1"></span>
+                            <span class="hover-shape-bg hover_shape2"></span>
+                            <span class="hover-shape-bg hover_shape3"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item text-center active-shape">
+                            <img src="assets/images/team/team-01.jpg" alt="Team-image" />
+                            <h4 class="team-title mb-8"><a href="teamdetails.html">Alexandra</a></h4>
+                            <div class="dsc">CHIEF MARKETING OFFICER</div>
+                            <span class="border-shadow shadow-1"></span>
+                            <span class="border-shadow shadow-2"></span>
+                            <span class="border-shadow shadow-3"></span>
+                            <span class="border-shadow shadow-4"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item text-center active-shape">
+                            <img src="assets/images/team/team-02.jpg" alt="Team-image" />
+                            <h4 class="team-title mb-8"><a href="teamdetails.html">Bernadette</a></h4>
+                            <div class="dsc">VP INTERNATIONAL RELATIONS</div>
+                            <span class="border-shadow shadow-1"></span>
+                            <span class="border-shadow shadow-2"></span>
+                            <span class="border-shadow shadow-3"></span>
+                            <span class="border-shadow shadow-4"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item text-center active-shape">
+                            <img src="assets/images/team/team-03.jpg" alt="Team-image"/>
+                            <h4 class="team-title mb-8"><a href="teamdetails.html">EMMA J CHALMERS</a></h4>
+                            <div class="dsc">VP BIZZCAREER</div>
+                            <span class="border-shadow shadow-1"></span>
+                            <span class="border-shadow shadow-2"></span>
+                            <span class="border-shadow shadow-3"></span>
+                            <span class="border-shadow shadow-4"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item text-center active-shape">
+                            <img src="assets/images/team/team-04.jpg" alt="Team-image"/>
+                            <h4 class="team-title mb-8"><a href="teamdetails.html">Jane wilson</a></h4>
+                            <div class="dsc">Sr. Developer</div>
+                            <span class="border-shadow shadow-1"></span>
+                            <span class="border-shadow shadow-2"></span>
+                            <span class="border-shadow shadow-3"></span>
+                            <span class="border-shadow shadow-4"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item text-center active-shape">
+                            <img src="assets/images/team/team-05.jpg" alt="Team-image"/>
+                            <h4 class="team-title mb-8"><a href="teamdetails.html">Jennifer</a></h4>
+                            <div class="dsc">CHIEF EXECUTIVE OFFICER</div>
+                            <span class="border-shadow shadow-1"></span>
+                            <span class="border-shadow shadow-2"></span>
+                            <span class="border-shadow shadow-3"></span>
+                            <span class="border-shadow shadow-4"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item text-center active-shape">
+                            <img src="assets/images/team/team-06.jpg" alt="Team-image"/>
+                            <h4 class="team-title mb-8"><a href="teamdetails.html">GRAHAM PATERSON
+                            </a></h4>
+                            <div class="dsc">CHIEF COMPLIANCE OFFICER
+                            </div>
+                            <span class="border-shadow shadow-1"></span>
+                            <span class="border-shadow shadow-2"></span>
+                            <span class="border-shadow shadow-3"></span>
+                            <span class="border-shadow shadow-4"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item text-center active-shape">
+                            <img src="assets/images/team/team-07.jpg" alt="Team-image"/>
+                            <h4 class="team-title mb-8"><a href="teamdetails.html">KEN DUNSTAN
+                            </a></h4>
+                            <div class="dsc">VP DIGITAL MARKETING
+                            </div>
+                            <span class="border-shadow shadow-1"></span>
+                            <span class="border-shadow shadow-2"></span>
+                            <span class="border-shadow shadow-3"></span>
+                            <span class="border-shadow shadow-4"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item text-center active-shape">
+                            <img src="assets/images/team/team-08.jpg" alt="Team-image"/>
+                            <h4 class="team-title mb-8"><a href="teamdetails.html">Victor
+                            </a></h4>
+                            <div class="dsc">VP SALES
+                            </div>
+                            <span class="border-shadow shadow-1"></span>
+                            <span class="border-shadow shadow-2"></span>
+                            <span class="border-shadow shadow-3"></span>
+                            <span class="border-shadow shadow-4"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Section End -->
+
+        <!-- Footer Section Start -->
+        <div id="join" class="gamfiRoadMap">
+            <div class="footer-area">
+                    <div class="sec-heading text-center">
+                        <div class="sub-inner mb-52 mb-mb-30">
+                            <img class="heading-right-image" src="assets/images/icons/steps2.png" alt="Steps-Image"/>
+                            <span class="sub-title white-color">Find us on Social</span>
+                            <img class="heading-left-image" src="assets/images/icons/steps.png" alt="Steps-Image"/>
+                        </div>
+                    </div>
+                    <div class="footer-listing text-center mb-100 md-mb-70 xs-mb-50">
+                        <ul class="footer-icon-list" style="padding: 0; display: flex; justify-content: center; align-items: center;">
+                            <li><a href="https://twitter.com/theamgen" target="_blank"><i  class="icon-twitter"></i></a></li>
+                            <li><a href="https://t.me/theamgen" target="_blank"><i  class="icon-telegram"></i></a></li>
+                            <li><a href="#"><i  class="icon-discord"></i></a></li>
+                            <li><a href="https://www.instagram.com/the.amgen/" target="_blank"><i  class="icon-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/theamgen" target="_blank"><i class="icon-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-logo text-center mb-45"> 
+                        <img src="assets/images/logo-full-white.png" alt="Footer-logo" />
+                    </div>
+                    <div class="copyright-area text-center mb-0">
+                        <div class="dsc mb-37 md-mb-25">Copyright © 2022. All Rights Reserved by 
+                            <a target="_blank" class="gafi" href="./index.html">AmGen</a>
+                        </div>
+                    </div>
+                    <div class="scrollup text-center">
+                        <a href="#gamfi-header"><i class="icon-arrow_up"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Section End -->
+
+        <!-- Modal Section Start-->
+        <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                         <h4 class="modals-title  mb-0" id="exampleModalLabel">Connect Wallet</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-x"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="mb-20">Please select a wallet to connect to this marketplace</p>
+                        <div class="connect-section">
+                            <ul class="heading-list">
+                                <li><a href="#"><span><img src="assets/images/icons/meta-mask.png" alt="Meta-mask-Image"></span>MetaMask</a></li>
+                                <li><a href="#"><span><img src="assets/images/icons/coinbase.png" alt="Coinbase-Image"></span>Coinbase</a></li>
+                                <li><a href="#"><span><img src="assets/images/icons/trust.png" alt="Trust-Image"></span>Trust Wallet</a></li>
+                                <li><a href="#"><span><img src="assets/images/icons/wallet.png" alt="Wallet-Image"></span>WalletConnect</a></li>
+                            </ul>
+                        </div>
+                        <p>By connecting your wallet, you agree to our <a href="#"><span class="modal-title">Terms of Service </span>
+                            </a>and our <a href="#"><span class="modal-title"> Privacy Policy</span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Section End-->
+
+        <!-- modernizr js -->
+        <script src="assets/js/modernizr-2.8.3.min.js"></script>
+        <!-- jquery latest version -->
+        <script src="assets/js/jquery.min.js"></script>
+        <!-- Bootstrap v4.4.1 js -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <!-- popup.min js -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- imagesloaded.pkgd.min js -->
+        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+        <!-- wow js -->
+        <script src="assets/js/wow.min.js"></script>
+        <!-- jquery counterup js -->
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <!-- counter top js -->
+        <script src="assets/js/waypoints.min.js"></script>
+        <!-- owl.carousel js -->
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <!-- plugins js -->
+        <script src="assets/js/plugins.js"></script>
+        <!-- Time Counter js -->
+        <script src="assets/js/time-counter.js"></script>
+        <!-- main js -->
+        <script src="assets/js/main.js"></script>
+        <script>
+            let menu = document.querySelectorAll('.nav-menu li a');
+            menu.forEach( (item)=> {
+                item.addEventListener('click', () => {
+                    if(document.body.classList.contains('nav-expanded')){
+                    document.body.classList.remove('nav-expanded');
+                }
+                })
+            })
+            // function to make header sticky
+            // let gamfiHeader = document.querySelector("#gamfi-header");
+            
+            // document.addEventListener('scroll', () => {
+            //     gamfiHeader.classList.add()
+            // })
+        </script>
+    </body>
+</html>
