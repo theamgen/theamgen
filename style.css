@@ -1,0 +1,5201 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&amp;display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap");
+
+
+/** 
+* 
+* -----------------------------------------------------------------------------
+*
+* Template : GamFi - Metaverse Web3 IGO/IDO Token Launchpad HTML 5 Template
+* Author : uigigs
+* Author URI : http://www.uigigs.com/
+*
+* -----------------------------------------------------------------------------
+* 
+**/
+/* TABLE OF CONTENT
+---------------------------------------------------------
+01. Gamfi General CSS
+02. Gamfi Header Section CSS
+03. Gamfi Banner Section CSS
+04. Gamfi Breadcrumbs Section CSS
+05. Gamfi About Section CSS
+06. Gamfi Project Section CSS
+07. Gamfi Project Details Section CSS
+08. Gamfi previous Section CSS
+09. Gamfi farming Section CSS
+10. Gamfi Calendar Section CSS
+11. Gamfi Leaderboard Section CSS
+12. Gamfi Igo-Rankging Section CSS
+13. Gamfi Tokenomics Section CSS
+14. Gamfi Team Section CSS
+15. Gamfi Partner Section CSS
+16. Gamfi Form Content Section CSS
+17. Gamfi Explore Content Section CSS
+18. Gamfi footer Section CSS
+19. Modal Section CSS
+20. Preloader CSS
+--------------------------------------------------------*/
+@font-face {
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(http://fonts.gstatic.com/s/russoone/v13/Z9XUDmZRWg6M1LvRYsH-yA.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(http://fonts.gstatic.com/s/inter/v7/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuOKfMZg.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(http://fonts.gstatic.com/s/inter/v7/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfMZg.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(http://fonts.gstatic.com/s/inter/v7/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuI6fMZg.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(http://fonts.gstatic.com/s/inter/v7/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuGKYMZg.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(http://fonts.gstatic.com/s/inter/v7/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYMZg.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(http://fonts.gstatic.com/s/inter/v7/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuDyYMZg.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(http://fonts.gstatic.com/s/inter/v7/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuBWYMZg.ttf) format('truetype');
+}
+
+/* -----------------------------------/
+    01. Gamfi General CSS
+-------------------------------------*/
+html,
+body {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: "Inter", sans-serif;
+    vertical-align: baseline;
+    line-height: 1.6;
+    font-weight: 500;
+    overflow-x: hidden;
+    background-color: #151625;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    margin: 0 0 26px;
+    line-height: 1.8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Russo One", sans-serif;
+    color: #ffffff;
+    margin: 0 0 26px;
+    line-height: 1.35;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+.sec-heading .sub-title {
+    color: #c08b2f;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "Russo One", sans-serif;
+}
+
+.sec-heading .heading-left-image {
+    margin-left: 10px;
+}
+
+.sec-heading .heading-right-image {
+    margin-right: 10px;
+}
+
+.uppercase {
+    text-transform: uppercase !important;
+}
+
+a {
+    color: #fff;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+    outline: none !important;
+    margin: 10px;
+    
+    
+}
+
+a:active,
+a:hover {
+    text-decoration: none;
+    outline: 0 none;
+    color: #a3ff12;
+}
+
+ul {
+    list-style: outside none none;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0px;
+    padding:0px; */
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+}
+
+
+
+button {
+    border: none;
+}
+
+.clear {
+    clear: both;
+}
+
+body .dblock {
+    display: block;
+}
+
+::-moz-selection {
+    background: #2D65F8;
+    text-shadow: none;
+    color: #ffffff;
+}
+
+::selection {
+    background: #2D65F8;
+    text-shadow: none;
+    color: #ffffff;
+}
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+    margin: 0;
+}
+
+body .search-modal .modal-content {
+    background: transparent;
+    position: initial;
+    border: 0;
+}
+
+body .search-modal .search-block input {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 15px;
+    background: transparent;
+    border-width: 0 0 1px 0;
+    border-radius: 0;
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+body .search-modal .close {
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 14px;
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    opacity: 1;
+    outline: none;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 20px;
+    z-index: -1;
+}
+
+body .search-modal .close:hover {
+    color: #a3ff12 !important;
+    opacity: 1 !important;
+}
+
+body .modal-backdrop {
+    opacity: 1 !important;
+}
+
+.readon,
+.white-bg-btn {
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    font-family: "Russo One", sans-serif;
+}
+
+.menu-area .readon {
+    padding: 11px 20px 9px;
+    color: #ffffff;
+    border: 2px solid #393941;
+}
+
+.menu-area .readon i {
+    position: relative;
+    top: -2px;
+    font-size: 8px;
+    line-height: 0;
+    color: rgba(255, 255, 255, 0.7);
+    padding-left: 16px;
+}
+
+.menu-area .readon .fa-calendar-alt {
+    font-size: 20px;
+}
+
+.menu-area button.readon {
+    overflow: hidden;
+}
+
+.white-bg-btn {
+    background: #fff;
+    color: #090a1a;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+}
+
+.white-bg-btn i {
+    margin-right: 8px;
+    color: #000000;
+}
+
+.white-bg-btn:hover {
+    background: transparent;
+    color: #fff;
+    border-color: #393941;
+}
+
+.white-bg-btn:hover i {
+    color: #fff;
+}
+
+.white-color {
+    color: #fff !important;
+}
+
+.border-none {
+    border: none !important;
+}
+
+/* -----------------------
+    02. Gamfi Header Section CSS
+--------------------------*/
+.gamfi-header-section {
+    background-color: #090a1a;
+    padding: 25px 0;
+}
+
+.gamfi-header-section.transparent-header {
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 12;
+}
+
+.gamfi-header-section.default-header {
+    background: #090A1A;
+    position: relative;
+}
+
+.gamfi-header-section.default-header:after,
+.gamfi-header-section.default-header:before {
+    width: 252px;
+    height: 100%;
+    content: "";
+    background-image: url(../images/bg/header-shape1.png);
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+}
+
+.gamfi-header-section.default-header:after {
+    background-image: url(../images/bg/header-shape1.png);
+    left: 0;
+}
+
+.gamfi-header-section.default-header:before {
+    background-image: url(../images/bg/header-shape2.png);
+    right: 0;
+}
+
+.gamfi-header-section .logo {
+    margin-right: 0px;
+}
+
+.gamfi-header-section .heaader-inner-area ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.gamfi-header-section .heaader-inner-area ul li ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    transform: scaleY(0);
+    transform-origin: 0 0 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+}
+
+.gamfi-header-section .heaader-inner-area ul li ul li {
+    display: block;
+    width: 240px;
+}
+
+.gamfi-header-section .heaader-inner-area ul li ul li + li {
+    border-top: 1px solid #343441;
+    margin-bottom: -1px;
+}
+
+.gamfi-header-section .heaader-inner-area ul li ul li a {
+    display: block;
+    background: #222231;
+    font-size: 16px;
+    font-family: "Russo One", sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 15px 24px;
+    transition: 0.4s;
+}
+
+.gamfi-header-section .heaader-inner-area ul li ul li a i {
+    font-size: 20px;
+    color: #fff;
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
+
+.gamfi-header-section .heaader-inner-area ul li ul li a:hover {
+    color: #fff;
+}
+
+.gamfi-header-section .heaader-inner-area ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+.gamfi-header-section .heaader-inner-area ul li img {
+    margin-right: 10px;
+}
+
+.gamfi-header-section .header-menu ul li {
+    display: inline-block;
+    overflow: visible;
+}
+
+.gamfi-header-section .header-menu ul li.menu-item-has-children {
+    position: relative;
+}
+
+.gamfi-header-section .header-menu ul li.menu-item-has-children:before {
+    content: "\e901";
+    position: absolute;
+    top: 18px;
+    right: -18px;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: "icomoon";
+    font-size: 7px;
+}
+
+.gamfi-header-section .header-menu ul li + li {
+    margin-left: 22px;
+}
+
+.gamfi-header-section .header-menu ul li a {
+    display: block;
+    color: #fff;
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    padding-top: 0px;
+    padding-bottom:0px;
+}
+
+.gamfi-header-section .header-menu ul li ul.sub-menu li {
+    margin-left: 0;
+    margin-bottom: -1px;
+}
+
+.gamfi-header-section .header-menu ul li ul.sub-menu li .sub-menu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    transform: scaleY(0);
+    transform-origin: 0 0 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.gamfi-header-section .header-menu ul li ul.sub-menu li:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+.gamfi-header-section .header-menu ul li ul.sub-menu li.menu-item-has-children {
+    position: relative;
+}
+
+.gamfi-header-section .header-menu ul li ul.sub-menu li.menu-item-has-children:before {
+    content: "\e902";
+    top: 22px;
+    right: 30px;
+    font-size: 10px;
+}
+
+.gamfi-header-section .white-btn {
+    background: #fff;
+    color: #090A1A;
+    margin: 10px;
+    padding: 13px 32px 11px;
+    border: none;
+}
+
+.gamfi-header-section .white-btn img {
+    position: relative;
+    top: -1px;
+    margin-right: 8px;
+}
+
+.gamfi-header-section .gamfi-btn-area ul li ul li a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.gamfi-header-section .gamfi-btn-area ul li ul li a:hover {
+    color: #fff;
+}
+
+.gamfi-header-section .gamfi-btn-area ul .nav-expander {
+    margin-top: 15px;
+}
+
+.gamfi-header-section .gamfi-btn-area ul .nav-expander .bar {
+    overflow: hidden;
+}
+
+.gamfi-header-section .gamfi-btn-area ul .nav-expander .bar span {
+    height: 2px;
+    display: block;
+    background: rgba(255, 255, 255, 0.7);
+    transition: all .5s ease;
+    cursor: pointer;
+    list-style: none;
+}
+
+.gamfi-header-section .gamfi-btn-area ul .nav-expander .bar span.dot1 {
+    width: 20px;
+    margin-bottom: 6px;
+}
+
+.gamfi-header-section .gamfi-btn-area ul .nav-expander .bar span.dot2 {
+    width: 30px;
+    margin-bottom: 6px;
+}
+
+.gamfi-header-section .gamfi-btn-area ul .nav-expander .bar span.dot3 {
+    width: 25px;
+}
+
+.gamfi-header-section .gamfi-btn-area ul .nav-expander .bar:hover span.dot1,
+.gamfi-header-section .gamfi-btn-area ul .nav-expander .bar:hover span.dot3 {
+    width: 30px;
+}
+
+.gamfi-header-section .gamfi-btn-area > ul {
+    display: flex;
+}
+
+.gamfi-header-section .right_menu_togle {
+    background: #2c2b40;
+    padding: 66px 60px 50px 50px;
+    max-width: 400px;
+    width: 100%;
+    right: -500px;
+    z-index: 999;
+    transition: all 0.3s ease;
+    position: fixed;
+    overflow-y: auto;
+}
+
+.gamfi-header-section .right_menu_togle .close-btn {
+    overflow: visible;
+    position: absolute;
+    top: 10px;
+    display: block;
+    z-index: 99;
+    right: 57px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.gamfi-header-section .right_menu_togle .close-btn .nav-close .line {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.gamfi-header-section .right_menu_togle .close-btn .nav-close .line span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 3px !important;
+    height: 28px !important;
+    background: #fff;
+    border: none !important;
+    transition: all 0.3s ease;
+}
+
+.gamfi-header-section .right_menu_togle .close-btn .nav-close .line span.line2 {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.gamfi-header-section .right_menu_togle .close-btn:hover .nav-close .line span {
+    opacity: 0.85;
+}
+
+.gamfi-header-section .right_menu_togle .canvas-logo {
+    padding-left: 0;
+    padding-bottom: 35px;
+}
+
+.gamfi-header-section .right_menu_togle .canvas-logo img {
+    max-height: 25px;
+}
+
+.gamfi-header-section .mobile-navbar-menu .sub-menu {
+    display: none;
+    position: relative;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+}
+
+.gamfi-header-section .mobile-navbar-menu .nav-menu li {
+    position: relative;
+}
+
+.gamfi-header-section .mobile-navbar-menu .nav-menu li a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    display: block;
+    color: #fff;
+    padding: 10px 0;
+    line-height: 30px;
+    width: 100%;
+    font-family: "Russo One", sans-serif;
+}
+
+.gamfi-header-section .mobile-navbar-menu .nav-menu li li a {
+    padding-left: 25px;
+}
+
+.gamfi-header-section .mobile-navbar-menu .nav-menu li li li a {
+    padding-left: 50px;
+}
+
+.gamfi-header-section .mobile-navbar-menu span.submenu-button {
+    position: absolute;
+    z-index: 99;
+    right: 0;
+    top: 5px;
+    display: block;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.gamfi-header-section .mobile-navbar-menu span.submenu-button:before,
+.gamfi-header-section .mobile-navbar-menu span.submenu-button:after {
+    position: absolute;
+    top: 24px;
+    right: 10px;
+    width: 20px;
+    height: 1px;
+    display: block;
+    background: #151625;
+    z-index: 2;
+    content: '';
+    right: 12px;
+    width: 12px;
+}
+
+.gamfi-header-section .mobile-navbar-menu span.submenu-button:before {
+    width: 1px;
+    height: 12px;
+    right: 17px;
+    top: 18px;
+}
+
+.gamfi-header-section .mobile-navbar-menu span.submenu-button em {
+    display: block;
+    position: absolute;
+    right: 0;
+    border-radius: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.gamfi-header-section .mobile-navbar-menu .hash-has-sub span.submenu-button {
+    width: 100%;
+    cursor: pointer;
+    top: 0;
+    height: 50px;
+}
+
+.gamfi-header-section .mobile-navbar-menu .submenu-button.submenu-opened:before {
+    display: none;
+}
+
+.gamfi-header-section .mobile-navbar-menu ul ul li,
+.gamfi-header-section .mobile-navbar-menu li:hover > ul > li {
+    height: auto;
+}
+
+.nav-expanded nav {
+    right: 0 !important;
+}
+
+.progress-inner {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px;
+}
+
+.progress-inner .progress,
+.progress-inner .progress-bar {
+    background-color: rgba(255, 255, 255, 0);
+    background-size: 14px 32px;
+    background-image: linear-gradient(60deg, rgba(255, 255, 255, 0.15) 26%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 54%, rgba(255, 255, 255, 0.15) 82%, transparent 75%, transparent);
+    height: 12px;
+}
+
+.progress-inner .progress {
+    border-radius: 0;
+}
+
+.progress-inner .progress-bar {
+    background-image: linear-gradient(60deg, #a3ff12 26%, transparent 25%, transparent 50%, #a3ff12 54%, #a3ff12 82%, transparent 75%, transparent);
+}
+
+.white-shape-small,
+.white-shape-big,
+.black-shape-big,
+.black-shape,
+.hover-shape {
+    position: relative;
+    overflow: hidden;
+}
+
+.white-shape-small img,
+.white-shape-big img,
+.black-shape-big img,
+.black-shape img,
+.hover-shape img,
+.white-shape-small .btn-text,
+.white-shape-big .btn-text,
+.black-shape-big .btn-text,
+.black-shape .btn-text,
+.hover-shape .btn-text {
+    position: relative;
+    z-index: 9;
+}
+
+.white-shape-small .hover-shape1,
+.white-shape-big .hover-shape1,
+.black-shape-big .hover-shape1,
+.black-shape .hover-shape1,
+.hover-shape .hover-shape1,
+.white-shape-small .hover-shape2,
+.white-shape-big .hover-shape2,
+.black-shape-big .hover-shape2,
+.black-shape .hover-shape2,
+.hover-shape .hover-shape2,
+.white-shape-small .hover-shape3,
+.white-shape-big .hover-shape3,
+.black-shape-big .hover-shape3,
+.black-shape .hover-shape3,
+.hover-shape .hover-shape3 {
+    position: absolute;
+    width: 5px;
+    background: rgba(0, 0, 0, 0.1);
+    height: 124%;
+    left: -42%;
+    top: -5px;
+    transform: rotate(22deg);
+    transition: 0.8s;
+}
+
+.white-shape-small .hover-shape3,
+.white-shape-big .hover-shape3,
+.black-shape-big .hover-shape3,
+.black-shape .hover-shape3,
+.hover-shape .hover-shape3 {
+    width: 11px;
+}
+
+.white-shape-small:hover .hover-shape1,
+.white-shape-big:hover .hover-shape1,
+.black-shape-big:hover .hover-shape1,
+.black-shape:hover .hover-shape1,
+.hover-shape:hover .hover-shape1 {
+    left: 42%;
+}
+
+.white-shape-small:hover .hover-shape2,
+.white-shape-big:hover .hover-shape2,
+.black-shape-big:hover .hover-shape2,
+.black-shape:hover .hover-shape2,
+.hover-shape:hover .hover-shape2 {
+    left: 50%;
+}
+
+.white-shape-small:hover .hover-shape3,
+.white-shape-big:hover .hover-shape3,
+.black-shape-big:hover .hover-shape3,
+.black-shape:hover .hover-shape3,
+.hover-shape:hover .hover-shape3 {
+    left: 58%;
+}
+
+.white-shape-small .hover-shape1,
+.white-shape-big .hover-shape1,
+.black-shape .hover-shape1,
+.white-shape-small .hover-shape2,
+.white-shape-big .hover-shape2,
+.black-shape .hover-shape2,
+.white-shape-small .hover-shape3,
+.white-shape-big .hover-shape3,
+.black-shape .hover-shape3 {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.white-shape-big:hover .hover-shape1,
+.black-shape-big:hover .hover-shape1 {
+    left: 46%;
+}
+
+.white-shape-big:hover .hover-shape2,
+.black-shape-big:hover .hover-shape2 {
+    left: 49%;
+}
+
+.white-shape-big:hover .hover-shape3,
+.black-shape-big:hover .hover-shape3 {
+    left: 52.5%;
+}
+
+/* ------------------------------------
+    03. Gamfi Banner Section CSS
+---------------------------------------*/
+.sc-banner {
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+    padding: 170px 0 225px;
+    background: url(../images/bg/banner-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sc-banner .video-iconarea {
+    position: relative;
+}
+
+.sc-banner .banner-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.sc-banner .banner-content .banner-btn:hover .hover-shape1 {
+    left: 44%;
+}
+
+.sc-banner .banner-content .banner-btn:hover .hover-shape3 {
+    left: 54%;
+}
+
+.sc-banner .banner-content .banner-icon {
+    margin: 0 0 24px;
+}
+
+.sc-banner .banner-content .banner-title {
+    margin: 0 0 20px;
+}
+
+.sc-banner .banner-content .sub-title {
+    font-weight: 300;
+    line-height: 1.3;
+}
+
+.sc-banner .banner-content .description {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 40px;
+}
+
+.banner-btn {
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    font-family: "Russo One", sans-serif;
+    background: #c08b2f;
+    color: #090a1a;
+    padding: 19px 50px;
+}
+
+.banner-btn:hover {
+    color: #090a1a;
+}
+
+.banner-btn .hover-shape1,
+.banner-btn .hover-shape2,
+.banner-btn .hover-shape3 {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* -----------------------
+    04. Gamfi Breadcrumbs Section CSS
+--------------------------*/
+.gamfi-breadcrumbs-section {
+    background: url(../images/bg/breadcrumbs-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0 70px;
+}
+
+.gamfi-breadcrumbs-section .breadcrumbs-link {
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    margin-right: 24px;
+    position: relative;
+    font-family: "Russo One", sans-serif;
+}
+
+.gamfi-breadcrumbs-section .breadcrumbs-link:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    bottom: 4px;
+    right: -15px;
+}
+
+.gamfi-breadcrumbs-section .breadcrumbs-link:hover {
+    color: #a3ff12;
+}
+
+.gamfi-breadcrumbs-section .breadcrumbs-form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.gamfi-breadcrumbs-section .breadcrumbs-form .breadcrumbs-social a {
+    color: #B8B8BD;
+    text-transform: uppercase;
+    font-family: "Russo One", sans-serif;
+}
+
+.gamfi-breadcrumbs-section .breadcrumbs-form .breadcrumbs-social a i {
+    font-size: 15px;
+}
+
+.gamfi-breadcrumbs-section .breadcrumbs-form form {
+    position: relative;
+    margin-right: 30px;
+    top: -3px;
+}
+
+.gamfi-breadcrumbs-section .breadcrumbs-form input {
+    background: transparent;
+}
+
+.gamfi-breadcrumbs-section .breadcrumbs-form input[type="text"] {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 11px 20px;
+    width: 380px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.gamfi-breadcrumbs-section .breadcrumbs-form input[type="submit"] {
+    font-size: 0;
+    border: none;
+}
+
+.gamfi-breadcrumbs-section .breadcrumbs-form .submit {
+    position: absolute;
+    right: -6px;
+    top: 11px;
+}
+
+.gamfi-breadcrumbs-section .breadcrumbs-form .submit i {
+    font-size: 15px;
+    cursor: pointer;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.7);
+    position: relative;
+    transition: 0.4s;
+    top: 2px;
+    right: 10px;
+}
+
+.gamfi-breadcrumbs-section .breadcrumbs-form .submit i:hover {
+    color: #B9B9C0;
+}
+
+.gamfi-breadcrumbs-section .breadcrumbs-form .btn-area .readon {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 12px 26px 10px;
+    color: #fff;
+}
+
+.gamfi-breadcrumbs-section .breadcrumbs-form .btn-area .readon i {
+    font-size: 15px;
+    top: 1px;
+    margin-right: 10px;
+    color: #fff;
+    position: relative;
+    z-index: 3;
+}
+
+.gamfi-breadcrumbs-section .breadcrumbs-form .btn-area .readon:hover {
+    color: #fff;
+}
+
+.gamfi-breadcrumbs-section.breadcrumbs-style2 {
+    padding-top: 130px;
+    padding-bottom: 115px;
+    background: url(../images/bg/breadcrumbs-bg2.jpg);
+    position: relative;
+    background-position: bottom center;
+    z-index: 2;
+}
+
+.gamfi-navigation ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.gamfi-navigation ul li + li {
+    margin-left: 4px;
+}
+
+.gamfi-navigation ul li:first-child {
+    top: 2px;
+}
+
+.gamfi-navigation ul li:first-child a {
+    padding: 11px 19px 8px;
+    position: relative;
+    top: -1px;
+}
+
+.gamfi-navigation ul li a {
+    display: block;
+    border: 1px solid #2E2F3C;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: "Russo One", sans-serif;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.gamfi-navigation ul li a .icon-Vector {
+    font-size: 13px;
+}
+
+.gamfi-navigation ul li a .icon-arrow_right {
+    font-size: 13px;
+}
+
+.gamfi-navigation ul li a.active:not(.black-shape),
+.gamfi-navigation ul li a:hover:not(.black-shape) {
+    background: #2E2F3C;
+    color: #a3ff12;
+}
+
+.breadcrumbs-form .gamfi-navigation {
+    position: relative;
+    top: -3px;
+}
+
+.breadcrumbs-form .gamfi-navigation ul {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.breadcrumbs-form .gamfi-navigation ul li:first-child {
+    top: 0;
+}
+
+.breadcrumbs-form .gamfi-navigation ul li:first-child a {
+    padding-top: 11px;
+    padding-bottom: 8px;
+}
+
+.canvas-menu ul li {
+    display: block;
+}
+
+.canvas-menu ul li + li {
+    padding-top: 15px;
+}
+
+.canvas-menu ul li a {
+    display: block;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.canvas-menu ul li a:hover {
+    color: #636363;
+}
+
+/* ------------------------------------
+    05. Gamfi About Section CSS
+---------------------------------------*/
+.gamfi-about-secion {
+    background: #151625;
+}
+
+.gamfi-about-secion .game-price-item {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    position: relative;
+    z-index: 9;
+}
+
+.gamfi-about-secion .game-price-item .game-price-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gamfi-about-secion .game-price-item .game-price-inner .price-inner .image-icon {
+    margin-right: 25px;
+}
+
+.gamfi-about-secion .game-price-item .game-price-inner .all-raise {
+    color: #ffffff;
+}
+
+.gamfi-about-secion .game-price-item .game-price-inner .allocation-max img {
+    margin-top: 10px;
+}
+
+.gamfi-about-secion .game-price-item .game-price-inner .allocation-max .allocation {
+    color: #ffffff;
+    margin-top: 73px;
+}
+
+.gamfi-about-secion .game-price-item .game-price-inner .targeted-raise .all-raise {
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+}
+
+.gamfi-about-secion .game-price-item .game-price-inner .targeted-raise .targeted-raise {
+    color: #ffffff;
+}
+
+.gamfi-about-secion .game-price-item .price-details h3,
+.gamfi-about-secion .game-price-item .price-details a {
+    color: #fff;
+    transition: 0.4s;
+    text-transform: capitalize;
+}
+
+.gamfi-about-secion .game-price-item .price-details .dsc {
+    text-transform: uppercase;
+}
+
+.gamfi-about-secion .game-price-item .more {
+    border: 1px solid #2E2F3C;
+}
+
+.gamfi-about-secion .text-content,
+.gamfi-about-secion .allocation,
+.gamfi-about-secion .targeted-raise {
+    font-family: "Russo One", sans-serif;
+}
+
+.gamfi-about-secion .game-price-inner,
+.gamfi-about-secion .progress-inner {
+    position: relative;
+    z-index: 3;
+}
+
+.gamfi-about-secion .total-price .all-raise {
+    font-family: "Russo One", sans-serif;
+}
+
+.gamfi-about-secion .targeted-raise .all-raise {
+    font-family: "Inter", sans-serif;
+}
+
+.gamfi-about-secion .total-price,
+.gamfi-about-secion .targeted-raise {
+    width: 38%;
+}
+
+.gamfi-about-secion .total-price .targeted-raise,
+.gamfi-about-secion .targeted-raise .targeted-raise {
+    width: 100%;
+}
+
+.gamfi-about-secion .allocation-max {
+    width: 24%;
+}
+
+.gamfi-about-secion .game-price-item .btn-area,
+.gamfi-about-secion .game-price-item .text-content,
+.gamfi-about-secion .game-price-item .social-area {
+    width: 33.333%;
+}
+
+.gamfi-about-secion .game-price-item .text-content {
+    text-align: center;
+}
+
+.gamfi-about-secion .game-price-item .social-icon-list {
+    text-align: right;
+}
+
+.banner-slider-inner {
+    margin-top: -156px;
+    z-index: 9;
+    position: relative;
+}
+
+.banner-slider-inner .game-price-inner img {
+    max-width: 100%;
+    width: auto;
+    margin: 0 auto;
+}
+
+.banner-slider-inner .owl-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.banner-slider-inner .owl-dots .owl-dot {
+    width: 11px;
+    height: 9px;
+    transform: skew(20deg);
+    background: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    margin: 0 5.5px;
+    transition: 0.3s;
+}
+
+.banner-slider-inner .owl-dots .owl-dot.active,
+.banner-slider-inner .owl-dots .owl-dot:hover {
+    background: #fff;
+}
+
+.price-counter .timer,
+.banner-slider-inner .timer {
+    margin-bottom: 48px;
+}
+
+.price-counter .timer ul,
+.banner-slider-inner .timer ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-counter .timer ul li,
+.banner-slider-inner .timer ul li {
+    font-size: 30px;
+    color: #fff;
+}
+
+.price-counter .timer ul li:last-child,
+.banner-slider-inner .timer ul li:last-child {
+    margin-right: 0;
+}
+
+.price-counter .timer ul li span,
+.banner-slider-inner .timer ul li span {
+    font-size: 16px;
+    margin-left: 2px;
+}
+
+.hover-shape-inner {
+    background: radial-gradient(circle, #4a4176 -24%, #1e1f35 40%);
+}
+
+.hover-shape-inner .hover-shape-bg {
+    width: 35px;
+    height: 100%;
+    transform: skew(-26deg);
+    display: inline-block;
+    margin: 0 5.5px;
+    transition: 0.3s;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(150, 136, 217, 0.06) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+.hover-shape-inner .hover_shape1 {
+    left: 40%;
+}
+
+.hover-shape-inner .hover_shape2 {
+    left: 46.5%;
+}
+
+.hover-shape-inner .hover_shape3 {
+    left: 53%;
+    width: 60px;
+}
+
+.active-shape,
+.hover-shape-border {
+    position: relative;
+}
+
+.active-shape .border-shadow,
+.hover-shape-border .border-shadow {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 9;
+}
+
+.active-shape .shadow-1,
+.hover-shape-border .shadow-1,
+.active-shape .shadow-3,
+.hover-shape-border .shadow-3 {
+    width: 5px;
+    height: 200px;
+}
+
+.active-shape .shadow-2,
+.hover-shape-border .shadow-2,
+.active-shape .shadow-4,
+.hover-shape-border .shadow-4 {
+    width: 200px;
+    height: 5px;
+}
+
+.active-shape .shadow-1,
+.hover-shape-border .shadow-1 {
+    top: 0px;
+    left: 0;
+    background: linear-gradient(to bottom, #f82552 -100%, rgba(21, 22, 37, 0) 64%);
+    width: 5px;
+    height: 200px;
+}
+
+.active-shape .shadow-2,
+.hover-shape-border .shadow-2 {
+    top: 0px;
+    left: 5px;
+    background: linear-gradient(to right, #f82552 -100%, rgba(21, 22, 37, 0) 64%);
+    width: 200px;
+    height: 5px;
+}
+
+.active-shape .shadow-3,
+.hover-shape-border .shadow-3 {
+    bottom: 0px;
+    right: 0;
+    width: 5px;
+    height: 200px;
+    background: linear-gradient(to top, #a3ff12 -100%, rgba(21, 22, 37, 0) 64%);
+}
+
+.active-shape .shadow-4,
+.hover-shape-border .shadow-4 {
+    bottom: 0px;
+    right: 5px;
+    width: 200px;
+    height: 5px;
+    background: linear-gradient(to left, #a3ff12 -100%, rgba(21, 22, 37, 0) 64%);
+}
+
+.hover-shape-border .border-shadow {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.hover-shape-border:hover .border-shadow {
+    opacity: 1;
+    visibility: visible;
+}
+
+.participate-item .participate-info h4 {
+    margin-top: 30px;
+}
+
+.participate-item .number-image {
+    margin-right: 12px;
+    flex: 0 0 21%;
+}
+
+/* ------------------------------------
+    06. Gamfi Project Section CSS
+---------------------------------------*/
+.gamfi-project-section {
+    background: url(../images/bg/project-bg.jpg);
+    padding-top: 115px;
+}
+
+.gamfi-project-section .gamfi-btn-area .readon {
+    color: #fff;
+    border: 2px solid #2E2F3B;
+    padding: 12px 25px 9px;
+    transition: 0.4s;
+}
+
+.gamfi-project-section .gamfi-btn-area .readon i {
+    font-size: 15px;
+    margin-right: 10px;
+    color: #fff;
+    position: relative;
+    z-index: 3;
+}
+
+.gamfi-project-section .gamfi-btn-area .readon:hover {
+    color: #fff;
+}
+
+.gamfi-project-section .project-item {
+    background: rgba(30, 31, 53, 0.8);
+    margin-bottom: 30px;
+    padding: 30px 30px 10px;
+}
+
+.gamfi-project-section .project-item .project-info {
+    margin-bottom: 28px;
+}
+
+.gamfi-project-section .project-item .project-info img {
+    margin-right: 20px;
+}
+
+.gamfi-project-section .project-item a {
+    color: #fff;
+}
+
+.gamfi-project-section .project-item a:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.gamfi-project-section .project-item .heading-title {
+    margin-bottom: 40px;
+}
+
+.gamfi-project-section .project-item .heading-title h4 {
+    font-size: 16px;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.gamfi-project-section .project-item .heading-title h4:before {
+    width: 197px;
+    height: 35px;
+    content: "";
+    background-image: url(../images/bg/shape-bg.png);
+    position: absolute;
+    left: -30px;
+    top: -7px;
+}
+
+.gamfi-project-section .project-item .project-icon {
+    position: relative;
+    top: -6px;
+}
+
+.gamfi-project-section .project-item .project-media li {
+    display: block;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+
+.gamfi-project-section .project-item .project-media li:last-child {
+    padding-bottom: 0;
+}
+
+.gamfi-project-section .project-item .project-media li strong {
+    font-weight: 400;
+    color: #fff;
+}
+
+.gamfi-project-section .project-item .project-media li span {
+    float: right;
+}
+
+.gamfi-project-section .project-item .project-media span {
+    color: #fff;
+}
+
+.gamfi-project-section .project-item .project-media .social-icon-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+    margin-top: -22px;
+}
+
+.gamfi-project-section .project-item .project-media .social-icon-list li {
+    padding-bottom: 0;
+}
+
+.gamfi-project-section .project-item .project-media .social-icon-list li a {
+    color: #fff;
+}
+
+.gamfi-project-section .project-item .project-media .social-icon-list li a i {
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.gamfi-project-section .project-item .project-media .social-icon-list li a i:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.gamfi-project-section .project-item .project-media .social-icon-list li {
+    display: inline-block;
+}
+
+.gamfi-project-section .project-item .project-media .social-icon-list li i {
+    padding-left: 10px;
+}
+
+.main-project-area .project-item:hover {
+    background-image: radial-gradient(circle, rgba(137, 120, 211, 0.4) 0%, #1e1f35 100%);
+}
+
+.view-more {
+    border: 2px solid #2E2F3C;
+    color: #fff;
+    padding: 12px 25px 8px;
+    text-transform: uppercase;
+    transition: 0.4s;
+    font-family: "Russo One", sans-serif;
+    overflow: hidden;
+    display: block;
+}
+
+.view-more i {
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.view-more:hover {
+    color: #fff;
+}
+
+/* ------------------------------------
+    07. Gamfi Project Details Section CSS
+---------------------------------------*/
+.project-details-conent {
+    background: #090a1a;
+}
+
+.project-details-conent .game-price-item {
+    margin-top: -90px;
+}
+
+.project-details-conent .banner-bottom-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-details-conent .banner-bottom-content .social-icon-list li {
+    display: inline-block;
+    margin-left: 12px;
+}
+
+.project-details-conent .banner-bottom-content .social-icon-list li a {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+}
+
+.project-details-conent .banner-bottom-content .social-icon-list li a:hover {
+    color: #a3ff12;
+}
+
+.project-details-conent .banner-bottom-content .social-icon-list li:first-child {
+    margin-left: 0;
+}
+
+.project-details-conent .banner-bottom-content .social-icon-list li {
+    display: inline-block;
+}
+
+.project-details-conent .banner-bottom-content .social-icon-list li i {
+    padding-left: 10px;
+    font-size: 20px;
+    transition: 0.4s;
+    color: #fff;
+}
+
+.project-details-conent .banner-bottom-content .social-icon-list li i:hover {
+    color: #B9B9C0;
+}
+
+.project-details-conent .project-item ul.date-listing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-details-conent .project-item .date-listing li button {
+    cursor: pointer;
+    border: 2px solid;
+    transition: 0.4s;
+    color: #fff;
+    padding: 12px 20px;
+    border-color: #303244;
+    font-family: "Russo One", sans-serif;
+    text-transform: uppercase;
+    border: 1px solid #303244;
+    outline: none;
+    background: transparent;
+}
+
+.project-details-conent .project-item .date-listing li:hover button,
+.project-details-conent .project-item .date-listing li.active button {
+    background: #303244;
+    color: #a3ff12;
+}
+
+.project-details-conent .banner-bottom-content .btn-area .readon {
+    background: #6D4AFE;
+    border: none;
+    transition: 0.4s;
+    padding: 17px 45;
+}
+
+.project-details-conent .readon {
+    background: #6d4afe;
+    border-color: #6d4afe;
+    border: 2px solid #3C3D4F;
+    transition: 0.4s;
+    color: #fff;
+    padding: 12px 20px;
+}
+
+.project-details-conent .readon:hover {
+    border-color: none;
+}
+
+.project-details-conent .project-item {
+    background: rgba(30, 31, 53, 0.8);
+    margin-bottom: 30px;
+    padding: 45px 50px;
+}
+
+.project-details-conent .project-item .project-info {
+    margin-bottom: 12px;
+}
+
+.project-details-conent .project-item .project-info img {
+    margin-left: 5px;
+}
+
+.project-details-conent .project-item .heading-title {
+    margin-bottom: 40px;
+}
+
+.project-details-conent .project-item .heading-title h4 {
+    font-size: 16px;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.project-details-conent .project-item .heading-title h4:before {
+    width: 197px;
+    height: 35px;
+    content: "";
+    background-image: url(../images/bg/shape-bg.png);
+    position: absolute;
+    left: -30px;
+    top: -7px;
+}
+
+.project-details-conent .project-item .border-bottom-2 {
+    border-bottom: 1px solid #3c3d4f;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.project-details-conent .project-item .date-listing li {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: transparent;
+}
+
+.project-details-conent .project-item .date-listing li input {
+    position: absolute;
+    top: -20px;
+}
+
+.project-details-conent .project-item .date-listing li label {
+    cursor: pointer;
+    border: 2px solid;
+    transition: 0.4s;
+    color: #fff;
+    padding: 12px 20px;
+    border-color: #303244;
+    font-family: "Russo One", sans-serif;
+    text-transform: uppercase;
+}
+
+.project-details-conent .project-item .date-listing li .active,
+.project-details-conent .project-item .date-listing li input:checked + label {
+    background: #303244;
+    color: #a3ff12;
+}
+
+.project-details-conent .project-item .date-listing li + li {
+    margin-left: 5px;
+}
+
+.project-details-conent .project-item .date-listing li a {
+    background: transparent;
+    border-color: #313245;
+}
+
+.project-details-conent .project-item .date-listing li a:hover {
+    background: #313245;
+    border-color: #313245;
+    color: #a3ff12;
+}
+
+.project-details-conent .project-item .big-text {
+    font-size: 30px;
+    color: #a3ff12;
+    font-family: "Russo One", sans-serif;
+    position: absolute;
+    right: 0;
+    top: -10px;
+}
+
+.project-details-conent .project-item .project-form-list .balance-form-area {
+    position: relative;
+}
+
+.project-details-conent .project-item .project-form-list .balance-form-area .white-shape-small {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+}
+
+.project-details-conent .project-item .project-form-list .balance-form-area input {
+    border: 1px solid #313245;
+    background: transparent;
+    padding: 16px 20px;
+    position: relative;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.project-details-conent .project-item .project-form-list .balance-form-area input[type="text"] {
+    position: relative;
+    z-index: 3;
+}
+
+.project-details-conent .project-item .project-form-list .balance-form-area .max {
+    position: absolute;
+    color: #fff;
+    margin-top: 17px;
+    margin-left: -60px;
+}
+
+.project-details-conent .project-item .project-form-list .balance-form-area input[type="submit"] {
+    width: 100%;
+    color: #fff;
+    background: #313245;
+    transition: 0.4S;
+    text-transform: uppercase;
+    font-family: "Russo One", sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 170px;
+}
+
+.project-details-conent .project-item .project-form-list .balance-form-area .approve input[type="submit"] {
+    background: #6D4AFE;
+}
+
+.project-details-conent .project-item .hover-shape-inner {
+    background: url(../images/bg/project-details-banner.jpg);
+}
+
+.project-details-conent .project-value-inner {
+    padding: 40px 50px 50px;
+}
+
+.project-details-conent .project-media li {
+    display: block;
+    overflow: hidden;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.project-details-conent .project-media li:last-child {
+    padding-bottom: 0;
+}
+
+.project-details-conent .project-media li strong {
+    font-weight: 400;
+    color: #fff;
+}
+
+.project-details-conent .project-media li span {
+    float: right;
+}
+
+.project-details-conent .project-media span {
+    color: #fff;
+}
+
+.project-details-conent .project-media img {
+    margin-right: 10px;
+}
+
+.project-details-conent .project-media .social-icon-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+    margin-top: -22px;
+}
+
+.project-details-conent .project-media .social-icon-list li {
+    padding-bottom: 0;
+}
+
+.project-details-conent .project-media .social-icon-list li a {
+    color: #fff;
+}
+
+.project-details-conent .project-media .social-icon-list li a:hover {
+    color: #a3ff12;
+}
+
+.project-details-conent .project-video-area {
+    position: relative;
+    margin-bottom: 55px;
+}
+
+.project-details-conent .project-video-area .video-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.project-details-conent .project-video-area i {
+    background: #fff;
+    color: #f82552;
+    font-size: 30px;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    border-radius: 70px;
+    display: inline-block;
+    text-align: center;
+}
+
+.project-details-conent table {
+    width: 100%;
+}
+
+.project-details-conent table .table-header {
+    background: #1e1f35;
+    text-transform: uppercase;
+    font-family: "Russo One", sans-serif;
+}
+
+.project-details-conent table .table-header th {
+    background: #1e1f35;
+    font-weight: 400;
+    padding: 17px 30px;
+}
+
+.project-details-conent table .table-header th:nth-child(2) {
+    padding-left: 45px;
+}
+
+.project-details-conent table td {
+    position: relative;
+    padding: 17px 30px;
+    border-bottom: 1px solid #2e2f3c;
+}
+
+.project-details-conent table td:nth-child(2) {
+    left: 16px;
+}
+
+.project-details-conent .project-service {
+    background: #1e1f35;
+    padding: 50px 100px 25px;
+    margin-bottom: 55px;
+    display: flex;
+}
+
+.project-details-conent .project-service .project-image {
+    margin-right: 70px;
+}
+
+.project-details-conent .project-service .project-content {
+    display: flex;
+}
+
+.project-details-conent .project-content .project-price span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.project-details-conent .project-content .project-price .project-sale {
+    position: relative;
+    padding-left: 10px;
+}
+
+.project-details-conent .project-content .project-price .project-sale:before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #fff;
+    left: -10px;
+    top: 7px;
+}
+
+.project-details-conent .project-content .project-price .darkslateblue:before {
+    background: #6d4afe;
+}
+
+.project-details-conent .project-content .project-price .cyan:before {
+    background: #3bcbff;
+}
+
+.project-details-conent .project-content .project-price .dodgerBlue:before {
+    background: #0b58fe;
+}
+
+.project-details-conent .project-content .project-price .turquoise:before {
+    background: #01cc9b;
+}
+
+.project-details-conent .project-content .project-price .springGreen:before {
+    background: #a3ff12;
+}
+
+.project-details-conent .project-content .project-price .darkturquoise:before {
+    background: #14a0c0;
+}
+
+.project-details-conent .project-content .project-price .turquoise:before {
+    background: #3bcbff;
+}
+
+.project-summary-menu {
+    background: #15162a;
+    padding: 48px 50px 15px;
+}
+
+.project-summary-menu .nav {
+    display: block;
+}
+
+.project-summary-menu .nav button {
+    display: block;
+    background: transparent;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: "Russo One", sans-serif;
+    margin-bottom: 25px;
+}
+
+.project-summary-menu .nav button img {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    margin-left: 5px;
+}
+
+.project-summary-menu .nav button.active {
+    color: #a3ff12;
+}
+
+.project-summary-menu .nav button.active img {
+    opacity: 1;
+    visibility: visible;
+}
+
+.project-meta-inner .meta-header {
+    background: #1a1b30;
+    padding: 45px 50px 15px;
+    margin-bottom: 30px;
+}
+
+.project-btn-area .readon {
+    display: block;
+    text-align: center;
+    padding: 17px;
+}
+
+.project-btn-area .active {
+    margin-bottom: 20px;
+    border: none;
+    color: #fff;
+}
+
+.project-btn-area .next {
+    background: #1e1f35;
+    border: none;
+    color: #fff;
+}
+
+.project-btn-area .next:hover {
+    color: #fff;
+}
+
+.project-btn-area .draw {
+    color: #fff;
+    background: #303244;
+}
+
+.project-meta-item {
+    background: #1a1b30;
+    padding: 43px 50px 50px;
+}
+
+.project-meta-item .meta-counter {
+    padding: 0 50px 50px;
+}
+
+.project-meta-item .meta-counter:first-child {
+    border-bottom: 1px solid #3c3d4f;
+    margin-bottom: 40px;
+    padding: 40px 50px 42px;
+}
+
+.project-details-conent .game-price-item .text-content {
+    color: #fff;
+}
+
+.project-details-conent .game-price-item .targeted-raise .targeted-raise {
+    position: relative;
+}
+
+.project-menu-area {
+    background: #222231;
+    margin-bottom: 42px;
+}
+
+.project-menu-area ul li {
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.project-menu-area ul li a,
+.project-menu-area ul li .tab-link {
+    color: #fff;
+    padding: 18px 28px;
+}
+
+.project-menu-area .project-left-menu .tab-link {
+    background: transparent;
+    font-family: "Russo One", sans-serif;
+    position: relative;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.project-menu-area .project-left-menu .tab-link:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #6d4afe;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.project-menu-area .project-left-menu .tab-link.active {
+    color: #fff;
+}
+
+.project-menu-area .project-left-menu .tab-link.active:before {
+    width: 100%;
+}
+
+.project-menu-area .project-left-menu .tab-link.calendar-date-text {
+    color: #fff;
+}
+
+.project-menu-area .project-right-menu ul li {
+    display: inline-block;
+}
+
+.project-menu-area .project-right-menu ul li:first-child {
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.project-menu-area .project-right-menu ul li:last-child {
+    border-right: 0 solid rgba(255, 255, 255, 0.08);
+}
+
+.project-menu-area .project-right-menu ul li a {
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.project-menu-area .al-access-menu > li {
+    padding-right: 50px;
+}
+
+.project-menu-area .al-access-menu > li:after,
+.project-menu-area .al-access-menu > li:before {
+    content: "\e901";
+    position: absolute;
+    top: 26px;
+    right: 28px;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: "icomoon";
+    font-size: 8px;
+    transition: 0.4s;
+}
+
+.project-menu-area .al-access-menu > li:after {
+    content: "\e903";
+    opacity: 0;
+    visibility: hidden;
+}
+
+.project-menu-area .al-access-menu > li:hover:before {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.project-menu-area .al-access-menu > li:hover:after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.project-menu-area .al-access-menu li {
+    position: relative;
+}
+
+.project-menu-area .al-access-menu li a:hover {
+    color: #fff;
+}
+
+.project-menu-area .al-access-menu li img {
+    max-width: 20px;
+    margin-right: 5px;
+}
+
+.project-menu-area .al-access-menu li ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    transform: scaleY(0);
+    transform-origin: 0 0 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    z-index: 3;
+    width: 100%;
+}
+
+.project-menu-area .al-access-menu li ul li {
+    display: block;
+    background: #222231;
+    border: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.project-menu-area .al-access-menu li ul li:last-child {
+    border-bottom: 0px;
+}
+
+.project-menu-area .al-access-menu li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+.project-menu-area .al-access-menu li.block ul {
+    width: 102%;
+    left: -4px;
+}
+
+.project-menu-area .al-access-menu.right-postion li ul {
+    left: auto;
+    right: 0;
+}
+
+/* ------------------------------------
+    08. Gamfi previous Section CSS
+---------------------------------------*/
+.gamfi-previous-section {
+    background: #090b1a;
+}
+
+.gamfi-previous-section .project-right-menu .access i {
+    padding-left: 60px;
+}
+
+.gamfi-previous-section .project-right-menu .block i {
+    padding-left: 30px;
+}
+
+.gamfi-previous-section .project-right-menu .chain {
+    padding-left: 80px;
+}
+
+.gamfi-previous-section .previous-mainmenu .menu-list {
+    font-family: "Russo One", sans-serif;
+}
+
+.gamfi-previous-section .previous-mainmenu .menu-list .date-list {
+    width: 13%;
+    position: relative;
+}
+
+.gamfi-previous-section .previous-mainmenu .menu-list.date-menu {
+    padding: 0 20px;
+}
+
+.gamfi-previous-section .previous-mainmenu .menu-list .date_2 {
+    left: 20px;
+}
+
+.gamfi-previous-section .previous-mainmenu .menu-list .date_3 {
+    left: 30px;
+}
+
+.gamfi-previous-section .previous-mainmenu .menu-list .date_4 {
+    left: 50px;
+}
+
+.gamfi-previous-section .previous-mainmenu .menu-list .date_5 {
+    left: 65px;
+}
+
+.gamfi-previous-section .previous-mainmenu .menu-list .date_6 {
+    left: 85px;
+}
+
+.gamfi-previous-section .previous-mainmenu .menu-list .date_7 {
+    left: 100px;
+}
+
+.gamfi-previous-section .previous-mainmenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.gamfi-previous-section .previous-mainmenu ul {
+    padding: 0 30px;
+}
+
+.gamfi-previous-section .previous-mainmenu ul li {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.gamfi-previous-section .previous-mainmenu ul .list1 {
+    width: 34.5%;
+}
+
+.gamfi-previous-section .previous-mainmenu ul .list2 {
+    width: 10.5%;
+}
+
+.gamfi-previous-section .previous-mainmenu ul .list3 {
+    width: 17.8%;
+}
+
+.gamfi-previous-section .previous-mainmenu ul .list4 {
+    width: 17.4%;
+}
+
+.gamfi-previous-section .previous-mainmenu ul .list5 {
+    width: 14%;
+}
+
+.gamfi-previous-section .form-check {
+    padding: 17px 68px;
+    cursor: pointer;
+}
+
+.gamfi-previous-section .form-check input,
+.gamfi-previous-section .form-check label {
+    cursor: pointer;
+}
+
+.gamfi-previous-section .form-switch {
+    font-family: "Russo One", sans-serif;
+    text-transform: uppercase;
+    transition: 0.4s;
+    cursor: pointer;
+    border-right: 0px;
+    padding: 18px 28px;
+}
+
+.gamfi-previous-section .form-switch:hover {
+    color: #fff;
+}
+
+.gamfi-previous-section .form-switch .switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 24px;
+}
+
+.gamfi-previous-section .form-switch .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.gamfi-previous-section .form-switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #434350;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.gamfi-previous-section .form-switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 6px;
+    bottom: 5px;
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.gamfi-previous-section .form-switch input:checked + .slider {
+    background-color: #6D4AFE;
+}
+
+.gamfi-previous-section .form-switch input:checked + .slider:before {
+    left: 0;
+}
+
+.gamfi-previous-section .form-switch .title {
+    margin-left: 6px;
+}
+
+.gamfi-previous-section .form-switch input:focus + .slider {
+    box-shadow: 0 0 1px #6D4AFE;
+}
+
+.gamfi-previous-section .form-switch input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.gamfi-previous-section .form-switch .slider.round {
+    border-radius: 34px;
+}
+
+.gamfi-previous-section .form-switch .slider.round:before {
+    border-radius: 50%;
+}
+
+.gamfi-previous-section .previous-item {
+    background: #1a1b30;
+    margin-bottom: 30px;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.4s;
+    color: #fff;
+}
+
+.gamfi-previous-section .previous-item .previous-gaming {
+    display: flex;
+}
+
+.gamfi-previous-section .previous-item .previous-gaming img {
+    margin-right: 20px;
+}
+
+.gamfi-previous-section .previous-item .previous-gaming .previous-price a {
+    transition: 0.4s;
+}
+
+.gamfi-previous-section .previous-item .previous-gaming .previous-price a:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.gamfi-previous-section .previous-item .previous-gaming .previous-price .dsc {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.gamfi-previous-section .previous-item .previous-chaining {
+    display: flex;
+    align-items: center;
+}
+
+.gamfi-previous-section .previous-item .previous-chaining img {
+    margin-right: 82px;
+}
+
+.gamfi-previous-section .previous-item .previous-chaining li {
+    display: inline-block;
+    padding-right: 5px;
+    text-transform: uppercase;
+}
+
+.gamfi-previous-section .previous-item .previous-chaining li:last-child {
+    padding-right: 0;
+}
+
+.gamfi-previous-section .previous-item .previous-gaming {
+    width: 100%;
+}
+
+.gamfi-previous-section .previous-item .previous-chaining {
+    width: 36%;
+}
+
+.gamfi-previous-section .previous-item .previous-raise {
+    width: 45%;
+}
+
+.gamfi-previous-section .previous-item .previous-raise {
+    display: flex;
+    align-items: center;
+}
+
+.gamfi-previous-section .previous-item .previous-raise .progress-inner {
+    width: 196px;
+}
+
+.gamfi-previous-section .previous-item .previous-raise span {
+    margin-right: 35px;
+}
+
+.gamfi-previous-section .previous-item .hover-shape-bg {
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    width: 14px;
+}
+
+.gamfi-previous-section .previous-item .hover_shape1 {
+    left: 46.5%;
+}
+
+.gamfi-previous-section .previous-item .hover_shape2 {
+    left: 48.5%;
+}
+
+.gamfi-previous-section .previous-item .hover_shape3 {
+    width: 26px;
+    left: 50.5%;
+}
+
+.gamfi-previous-section .previous-item:hover {
+    background: radial-gradient(circle, rgba(96, 79, 169, 0.58) -7%, #1e1f35 30%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gamfi-previous-section .previous-item:hover .hover-shape-bg {
+    opacity: 1;
+    visibility: visible;
+}
+
+.gamfi-previous-section .progress-inner .progress,
+.gamfi-previous-section .progress-inner .progress-bar {
+    background-size: 10px 20px;
+    height: 6px;
+}
+
+.gamfi-previous-section .progress-inner {
+    padding-bottom: 7px;
+}
+
+.gamfi-previous-section .project-item {
+    background-image: radial-gradient(circle, rgba(86, 75, 135, 0.85) 0%, #1e1f35 100%);
+    margin-bottom: 30px;
+    padding: 30px 30px 10px;
+}
+
+.gamfi-previous-section .project-item .project-info {
+    margin-bottom: 28px;
+}
+
+.gamfi-previous-section .project-item .project-info img {
+    margin-right: 20px;
+}
+
+.gamfi-previous-section .project-item a {
+    color: #fff;
+}
+
+.gamfi-previous-section .project-item a:hover {
+    color: #a3ff12;
+}
+
+.gamfi-previous-section .project-item .heading-title {
+    margin-bottom: 40px;
+}
+
+.gamfi-previous-section .project-item .heading-title h4 {
+    font-size: 16px;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.gamfi-previous-section .project-item .heading-title h4:before {
+    width: 197px;
+    height: 35px;
+    content: "";
+    background-image: url(../images/bg/shape-bg.png);
+    position: absolute;
+    left: -30px;
+    top: -7px;
+}
+
+.gamfi-previous-section .project-item .project-icon {
+    position: relative;
+    top: -6px;
+}
+
+.gamfi-previous-section .project-item .project-media li {
+    display: block;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+
+.gamfi-previous-section .project-item .project-media li:last-child {
+    padding-bottom: 0;
+}
+
+.gamfi-previous-section .project-item .project-media li strong {
+    font-weight: 400;
+    color: #fff;
+}
+
+.gamfi-previous-section .project-item .project-media li span {
+    float: right;
+}
+
+.gamfi-previous-section .project-item .project-media span {
+    color: #fff;
+}
+
+.gamfi-previous-section .project-item .project-media .social-icon-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+    margin-top: -22px;
+}
+
+.gamfi-previous-section .project-item .project-media .social-icon-list li {
+    padding-bottom: 0;
+}
+
+.gamfi-previous-section .project-item .project-media .social-icon-list li a {
+    color: #fff;
+}
+
+.gamfi-previous-section .project-item .project-media .social-icon-list li a i {
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.gamfi-previous-section .project-item .project-media .social-icon-list li a i:hover {
+    color: #a3ff12;
+}
+
+.gamfi-previous-section .project-item .project-media .social-icon-list li {
+    display: inline-block;
+}
+
+.gamfi-previous-section .project-item .project-media .social-icon-list li i {
+    padding-left: 10px;
+}
+
+.gamfi-previous-section .calender-image-area {
+    position: relative;
+}
+
+.gamfi-previous-section .calender-image-area img {
+    cursor: pointer;
+}
+
+.gamfi-previous-section .calender-image-area .project-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 370px;
+    transform: scale(0);
+    transition: 0.4s;
+    z-index: 10;
+}
+
+.gamfi-previous-section .calender-image-area:hover .project-item {
+    transform: scale(1);
+}
+
+.gamfi-previous-section .tab-pane .previous-item {
+    margin-bottom: 20px;
+}
+
+/* ------------------------------------
+    09. Gamfi farming Section CSS
+---------------------------------------*/
+.gamfi-farming-content .default-centent {
+    background: #1A1B30;
+    padding: 18px 25px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.gamfi-farming-content .list-content {
+    flex: 0 0 16.66%;
+    width: 16.66%;
+    color: #fff;
+}
+
+.gamfi-farming-content .list-1 {
+    flex: 0 0 26.66%;
+    width: 26.66%;
+}
+
+.gamfi-farming-content .list-6 {
+    flex: 0 0 2%;
+    width: 2%;
+}
+
+.gamfi-farming-content .expeand-centent {
+    background: #222231;
+    padding: 28px 30px;
+}
+
+.gamfi-farming-content .expeand-centent .farm-form-list .farm-form-area {
+    border: 1px solid #434350;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.gamfi-farming-content .expeand-centent .farm-form-list input {
+    border: none;
+    background: transparent;
+    padding: 7px 20px;
+    position: relative;
+}
+
+.gamfi-farming-content .expeand-centent .farm-form-list input[type="text"] {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.gamfi-farming-content .expeand-centent .farm-form-list .max {
+    position: absolute;
+    color: #fff;
+    right: 45%;
+    top: 19px;
+}
+
+.gamfi-farming-content .expeand-centent .farm-form-list input[type="submit"] {
+    color: #fff;
+    transition: 0.4S;
+    text-transform: uppercase;
+    font-family: "Russo One", sans-serif;
+    position: relative;
+    z-index: 3;
+}
+
+.gamfi-farming-content .expeand-centent .farm-form-list .black-shape {
+    position: absolute;
+    z-index: 9999;
+    right: 9px;
+    background: #6D4AFE;
+}
+
+.gamfi-farming-content .expeand-centent .farm-form-list .black-shape span {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.gamfi-farming-content .expeand-centent .farm-form-list .withdraw {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.gamfi-farming-content .expeand-centent .farm-form-list .withdraw span {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.gamfi-farming-content .expeand-centent .farm-form-list input[type="submit"].submit-active {
+    background: #6D4AFE;
+}
+
+.gamfi-farming-content .expeand-centent .farm-form-list:last-child h5 {
+    position: relative;
+    top: -15px;
+}
+
+.gamfi-farming-content .expeand-centent .expeand-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.gamfi-farming-content .expeand-centent .expeand-menu ul li {
+    display: inline-block;
+    color: #a3ff12;
+    font-size: 14px;
+    margin-right: 30px;
+}
+
+.gamfi-farming-content .expeand-centent .expeand-menu ul li i {
+    font-size: 15px;
+    color: #a3ff12;
+    padding-left: 10px;
+}
+
+.gamfi-farming-content .expeand-centent .unit {
+    color: #a3ff12;
+    font-size: 22px;
+    font-family: "Russo One", sans-serif;
+}
+
+.gamfi-farming-content .icon-arrow_up {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.gamfi-farming-content .expeand-centent {
+    display: none;
+}
+
+.gamfi-farming-content .border-shadow {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.gamfi-farming-content .expeand-arrow {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.gamfi-farming-content .expeand-arrow .expeand-arrow {
+    transform: rotate(0deg);
+}
+
+.gamfi-farming-content .expeand-bottom-content .expeand-centent {
+    display: block;
+}
+
+.gamfi-farming-content .expeand-bottom-content .border-shadow {
+    opacity: 1;
+    visibility: visible;
+}
+
+.gamfi-farming-content .expeand-bottom-content .expeand-arrow:before {
+    transform: rotate(45deg);
+}
+
+.gamfi-farming .gamfi-farming-content .default-centent {
+    margin-bottom: 0;
+}
+
+.gamfi-farming .gamfi-table-inner {
+    margin-bottom: 20px;
+}
+
+.gamfi-farming .farm-form-list {
+    width: 33.33%;
+    margin-right: 30px;
+}
+
+.gamfi-farming .farm-form-list:last-child {
+    margin-right: 0;
+}
+
+.gamfi-farming .farm-form-list .farm-form {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gamfi-farming .farm-form-list .farm-form input[type="submit"] {
+    position: static;
+}
+
+.gamfi-farming-table {
+    background: #090a1a;
+}
+
+.gamfi-farming-table table {
+    width: 100%;
+}
+
+.gamfi-farming-table tr th,
+.gamfi-farming-table tr td {
+    width: 16.666%;
+    padding: 25.5px 25px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.gamfi-farming-table tr th:first-child,
+.gamfi-farming-table tr td:first-child {
+    width: 26.666%;
+}
+
+.gamfi-farming-table tr th:nth-child(5) {
+    width: 22.666%;
+}
+
+.gamfi-farming-table tr .image-row {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.gamfi-farming-table tr .image-row img {
+    margin-right: 10px;
+}
+
+.gamfi-farming-table tr th {
+    font-family: "Inter", sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 8px;
+    padding-bottom: 5px;
+}
+
+.gamfi-farming-table tr td {
+    background: #1a1b30;
+    color: #fff;
+}
+
+/* ------------------------------------
+    10. Gamfi Calendar Section CSS
+---------------------------------------*/
+.gamfi-calendar-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gamfi-calendar-list .calender-date {
+    background: #1a1b30;
+    padding: 20px;
+    min-height: 171px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    flex: 0 0 auto;
+    width: 13.7%;
+}
+
+.gamfi-calendar-list .calender-date ul {
+    margin-top: 70px;
+}
+
+.gamfi-calendar-list .calender-date ul li {
+    display: inline-block;
+}
+
+.gamfi-calendar-list .calender-date ul li + li {
+    margin-left: 5px;
+}
+
+.gamfi-calendar-list .calender-date ul li ul {
+    margin-top: 0;
+}
+
+.gamfi-calendar-list .calender-date ul li ul li {
+    margin-left: 0;
+}
+
+.gamfi-calendar-list .calender-date > ul > li {
+    max-width: 34px;
+}
+
+.gamfi-calendar-list .heading-title h4 {
+    text-transform: uppercase;
+}
+
+/* ------------------------------------
+    11. Gamfi Leaderboard Section CSS
+---------------------------------------*/
+.leaderboard-table-list {
+    background: #090a1a;
+}
+
+.leaderboard-table-list table {
+    width: 100%;
+}
+
+.leaderboard-table-list tr th,
+.leaderboard-table-list tr td {
+    width: 20%;
+    padding: 15px 25px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.leaderboard-table-list tr th:last-child,
+.leaderboard-table-list tr td:last-child {
+    text-align: right;
+}
+
+.leaderboard-table-list tr th:nth-child(3),
+.leaderboard-table-list tr td:nth-child(3) {
+    width: 30%;
+}
+
+.leaderboard-table-list tr th:nth-child(1),
+.leaderboard-table-list tr td:nth-child(1),
+.leaderboard-table-list tr th:nth-child(4),
+.leaderboard-table-list tr td:nth-child(4) {
+    width: 15%;
+}
+
+.leaderboard-table-list tr th {
+    font-family: "Russo One", sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 8px;
+    padding-bottom: 5px;
+}
+
+.leaderboard-table-list tr td {
+    background: #1a1b30;
+    color: #fff;
+}
+
+.gamfi-breadcrumbs-section .breadcrumbs-form.mr-0 form {
+    margin-right: 0;
+}
+
+/* ------------------------------------
+    12. Gamfi Igo-Rankging Section CSS
+---------------------------------------*/
+.igo-rankging-table-list {
+    background: #090a1a;
+}
+
+.igo-rankging-table-list table {
+    width: 100%;
+}
+
+.igo-rankging-table-list tr th,
+.igo-rankging-table-list tr td {
+    width: 14.28%;
+    padding: 20px 25px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.igo-rankging-table-list tr th:last-child,
+.igo-rankging-table-list tr td:last-child {
+    text-align: right;
+}
+
+.igo-rankging-table-list tr th:nth-child(2),
+.igo-rankging-table-list tr td:nth-child(2) {
+    width: 24%;
+}
+
+.igo-rankging-table-list tr th:nth-child(3),
+.igo-rankging-table-list tr td:nth-child(3) {
+    width: 12.28%;
+}
+
+.igo-rankging-table-list tr th:last-child,
+.igo-rankging-table-list tr td:last-child {
+    width: 9.28%;
+}
+
+.igo-rankging-table-list tr th:nth-child(1),
+.igo-rankging-table-list tr td:nth-child(1) {
+    width: 10.28%;
+}
+
+.igo-rankging-table-list tr th:last-child,
+.igo-rankging-table-list tr td:last-child {
+    width: 10.28%;
+}
+
+.igo-rankging-table-list tr th img,
+.igo-rankging-table-list tr td img {
+    max-width: 35px;
+}
+
+.igo-rankging-table-list tr .image-row {
+    padding-top: 15.5px;
+    padding-bottom: 15.5px;
+}
+
+.igo-rankging-table-list tr .image-row img {
+    margin-right: 15px;
+}
+
+.igo-rankging-table-list tr th {
+    font-family: "Russo One", sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 8px;
+    padding-bottom: 5px;
+}
+
+.igo-rankging-table-list tr td {
+    background: #1a1b30;
+    color: #fff;
+}
+
+@-moz-document url-prefix() {
+
+    .igo-rankging-table-list tr th:nth-child(2),
+    .igo-rankging-table-list tr td:nth-child(2) {
+        width: 23%;
+    }
+
+    .igo-rankging-table-list tr th:nth-child(3),
+    .igo-rankging-table-list tr td:nth-child(3) {
+        width: 12%;
+    }
+
+    .igo-rankging-table-list tr th,
+    .igo-rankging-table-list tr td {
+        width: 14%;
+    }
+}
+
+/* ------------------------------------
+    13. Gamfi Tokenomics Section CSS
+---------------------------------------*/
+.gamfi-tokenomics-section .tokenomics-counter .counter-number {
+    font-size: 36px;
+    color: #6d4afe;
+    font-family: "Russo One", sans-serif;
+    display: block;
+}
+
+.gamfi-tokenomics-section .tokenomics-counter h5 {
+    margin-bottom: 0;
+}
+
+.gamfi-tokenomics-section .tokenomics-left-right-shape {
+    position: relative;
+}
+
+.gamfi-tokenomics-section .tokenomics-left-right-shape:before,
+.gamfi-tokenomics-section .tokenomics-left-right-shape:after {
+    height: 40px;
+    width: 604px;
+    content: " ";
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.gamfi-tokenomics-section .tokenomics-left-right-shape:before {
+    background-image: url(../images/banner/left_shape.html);
+    width: 614px;
+    top: 0;
+    left: 0;
+}
+
+.gamfi-tokenomics-section .tokenomics-left-right-shape:after {
+    background-image: url(../images/banner/right_shape.html);
+    bottom: 0;
+    right: 0;
+}
+
+/* ------------------------------------
+    14. Gamfi Team Section CSS
+---------------------------------------*/
+.gamfi-team-section {
+    background: url(../images/bg/team-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-color: #090a1a;
+}
+
+.gamfi-team-section .team-item {
+    background: rgba(26, 27, 47, 0.85);
+    margin-bottom: 30px;
+    padding: 35px 0 30px 0;
+    transition: 1.4s;
+}
+
+.gamfi-team-section .team-item img {
+    margin-bottom: 45px;
+    max-width: 60%;
+}
+
+.gamfi-team-section .team-item a {
+    color: #fff;
+    transition: 0.4s;
+}
+
+.gamfi-team-section .team-item a:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.gamfi-team-section .team-item .dsc {
+    margin-bottom: 15px;
+}
+
+.gamfi-team-section .team-item .team-icon-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.gamfi-team-section .team-item .team-icon-list li {
+    display: inline-block;
+    padding: 0 7px;
+}
+
+.gamfi-team-section .team-item .team-icon-list li a {
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.4s;
+}
+
+.gamfi-team-section .team-item .team-icon-list li a i {
+    font-size: 15px;
+}
+
+.gamfi-team-section .team-item .border-shadow {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.gamfi-team-section .team-item:hover {
+    background-image: radial-gradient(circle, rgba(137, 120, 211, 0.4) 0%, #1e1f35 100%);
+}
+
+.gamfi-team-section .team-item:hover .border-shadow {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ------------------------------------
+    15. Gamfi Partner Section CSS
+---------------------------------------*/
+.gamfi-partner-section {
+    background: #0a0b1a;
+}
+
+.gamfi-partner-section .partner-item .partner-image {
+    padding-right: 70px;
+}
+
+.gamfi-partner-section img {
+    transition: 0.4s;
+}
+
+.gamfi-partner-section img:hover {
+    opacity: 0.7;
+}
+
+.gamfi-partner-section .gamfi-partner-inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.gamfi-partner-section .gamfi-partner-inner:after,
+.gamfi-partner-section .gamfi-partner-inner:before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    background: linear-gradient(to right, #0a0b1a, rgba(10, 10, 26, 0));
+    z-index: 1;
+}
+
+.gamfi-partner-section .gamfi-partner-inner:before {
+    left: 0;
+}
+
+.gamfi-partner-section .gamfi-partner-inner:after {
+    right: 0;
+    transform: rotateZ(180deg);
+}
+
+.gamfi-partner-section .gamfi-partner-inner .partner-image {
+    flex-shrink: 0;
+    animation: 20s linear 0s infinite normal none running loop-animate;
+}
+
+.gamfi-partner-section .gamfi-partner-inner .partner-image a {
+    margin: 0px 35px;
+}
+
+@keyframes loop-animate {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* ------------------------------------
+16. Gamfi Form Content Section CSS
+---------------------------------------*/
+.gamfi-form-content {
+    background: #090A1A;
+}
+
+.gamfi-form-content .container {
+    max-width: 580px;
+}
+
+.gamfi-form-content .form-title {
+    margin-top: 35px;
+    text-transform: uppercase;
+}
+
+.gamfi-form-content .address-form h5 {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.gamfi-form-content .address-form ::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    opacity: 1;
+}
+
+.gamfi-form-content .address-form input {
+    border: 2px solid #2e2f3c;
+    width: 100%;
+    background: transparent;
+    color: #fff;
+    padding: 15px 15px;
+}
+
+.gamfi-form-content .address-form textarea {
+    width: 100%;
+    background: transparent;
+    border: 2px solid #2e2f3c;
+    color: #fff;
+    padding: 15px 13px;
+    margin-bottom: 30px;
+}
+
+.gamfi-form-content .address-form .input-list {
+    position: relative;
+    display: block;
+}
+
+.gamfi-form-content .address-form .input-list input[type="radio"] {
+    position: absolute;
+    visibility: hidden;
+    border: 2px solid #2e2f3c;
+    width: 100%;
+    background: transparent;
+    color: #fff;
+    padding: 15px 15px;
+}
+
+.gamfi-form-content .address-form .input-list label {
+    display: block;
+    position: relative;
+    padding: 0px 25px 33px 40px;
+    margin: 10px auto;
+    height: 30px;
+    z-index: 9;
+    cursor: pointer;
+    -webkit-transition: all 0.25s linear;
+}
+
+.gamfi-form-content .address-form .input-list .check {
+    display: block;
+    position: absolute;
+    border: 2px solid #3a3b48;
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+    top: 3px;
+    left: 0;
+    z-index: 5;
+    transition: border 0.25s linear;
+    -webkit-transition: border 0.25s linear;
+}
+
+.gamfi-form-content .address-form .input-list .check:before {
+    display: block;
+    position: absolute;
+    content: "";
+    border-radius: 100%;
+    height: 8px;
+    width: 8px;
+    top: 4px;
+    left: 4.5px;
+    margin: auto;
+    transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear;
+}
+
+.gamfi-form-content .address-form .input-list input[type="radio"]:checked ~ .check {
+    border: 2px solid #568416;
+}
+
+.gamfi-form-content .address-form .input-list input[type="radio"]:checked ~ .check::before {
+    background: #a3ff12;
+}
+
+.gamfi-form-content .address-form .input-list input[type="radio"]:checked + h5,
+.gamfi-form-content .address-form .input-list input[type="radio"]:checked ~ label {
+    color: #fff;
+}
+
+.gamfi-form-content .address-form .input-button {
+    position: relative;
+    padding-top: 36px;
+    margin-top: 30px;
+}
+
+.gamfi-form-content .address-form .input-button i {
+    position: absolute;
+    border-right: 2px solid #2e2f3c;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.gamfi-form-content .address-form .input-button label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: "Russo One", sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+}
+
+.gamfi-form-content .address-form .input-button input:focus ~ label,
+.gamfi-form-content .address-form .input-button input:valid ~ label {
+    color: #fff;
+}
+
+.gamfi-form-content .address-form .input-button input.enter {
+    padding-left: 77px;
+}
+
+.gamfi-form-content .address-form .input-button .brief {
+    padding-bottom: 85px;
+}
+
+.gamfi-form-content .address-form .icon-input-box input {
+    padding-left: 80px;
+    font-family: "Inter", sans-serif;
+}
+
+.gamfi-form-content .address-form .project-btn-area {
+    background: #6d4afe;
+}
+
+.gamfi-form-content .address-form .project-btn-area input {
+    font-family: "Russo One", sans-serif;
+    color: #fff;
+    border: none;
+    transition: 0.4s;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 3;
+}
+
+.gamfi-form-content .address-form .project-btn-area:hover .hover-shape1 {
+    left: 47%;
+}
+
+.gamfi-form-content .address-form .project-btn-area:hover .hover-shape3 {
+    left: 51%;
+}
+
+/* ------------------------------------
+17. Gamfi Explore Content Section CSS
+---------------------------------------*/
+.gamfi-explore-content {
+    background: #090a1a;
+}
+
+.gamfi-explore-content .project-menu-area {
+    margin-bottom: 45px;
+}
+
+.gamfi-explore-content .project-item {
+    background: rgba(30, 31, 53, 0.8);
+    padding: 30px 30px 10px;
+}
+
+.gamfi-explore-content .project-item .project-info {
+    margin-bottom: 28px;
+}
+
+.gamfi-explore-content .project-item .project-info img {
+    margin-right: 20px;
+}
+
+.gamfi-explore-content .project-item .heading-title {
+    margin-bottom: 40px;
+}
+
+.gamfi-explore-content .project-item .heading-title h4 {
+    font-size: 16px;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.gamfi-explore-content .project-item .heading-title h4:before {
+    width: 197px;
+    height: 35px;
+    content: "";
+    background-image: url(../images/bg/shape-bg.png);
+    position: absolute;
+    left: -30px;
+    top: -7px;
+}
+
+.gamfi-explore-content .project-info img {
+    margin-bottom: 25px;
+}
+
+.gamfi-explore-content .project-media {
+    margin-bottom: 20px;
+}
+
+.gamfi-explore-content .project-media ul li {
+    display: block;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+
+.gamfi-explore-content .project-media ul li:last-child {
+    padding-bottom: 0;
+}
+
+.gamfi-explore-content .project-media ul li span {
+    float: right;
+    color: #fff;
+}
+
+.gamfi-explore-content .icon-listing {
+    background: #25263a;
+    padding: 15px 30px;
+    margin-bottom: 30px;
+}
+
+.gamfi-explore-content .icon-listing .social-icon-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.gamfi-explore-content .icon-listing .social-icon-list li {
+    display: inline-block;
+}
+
+.gamfi-explore-content .icon-listing .social-icon-list li i {
+    color: #fff;
+    padding-right: 20px;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.gamfi-explore-content .icon-listing .social-icon-list li i:hover {
+    color: #B9B9C0;
+}
+
+body .gamfi-explore-content .project-item {
+    margin-bottom: 0;
+}
+
+/* ------------------------------------
+    18. Gamfi footer Section CSS
+---------------------------------------*/
+.gamfi-footer-section {
+    background-color: #090a1a;
+    position: relative;
+}
+
+.gamfi-footer-section .footer-cta-area {
+    background: radial-gradient(circle, #4a4176 -24%, #1e1f35 40%);
+    padding: 70px 0 80px 0;
+    position: relative;
+    z-index: 9;
+}
+
+.gamfi-footer-section .footer-cta-area .footer-link input[type="email"] {
+    border: none;
+    background: transparent;
+    border: 2px solid #4C4764;
+    padding: 15px 15px;
+    width: 350px;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.gamfi-footer-section .footer-cta-area .footer-link .subscribe {
+    background: #a3ff12;
+}
+
+.gamfi-footer-section .footer-cta-area .footer-link .subscribe span {
+    z-index: 9;
+}
+
+.gamfi-footer-section .footer-cta-area .footer-link input[type="submit"] {
+    border: none;
+    text-transform: uppercase;
+    font-family: "Russo One", sans-serif;
+    padding: 17px 50px;
+    position: relative;
+    z-index: 3;
+    background: transparent;
+}
+
+.gamfi-footer-section .footer-cta-area .black-shape .hover-shape1,
+.gamfi-footer-section .footer-cta-area .black-shape .hover-shape2,
+.gamfi-footer-section .footer-cta-area .black-shape .hover-shape3 {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.gamfi-footer-section .footer-cta-area .black-shape:hover .hover-shape1 {
+    left: 44%;
+}
+
+.gamfi-footer-section .footer-cta-area .black-shape:hover .hover-shape3 {
+    left: 56%;
+}
+
+.gamfi-footer-section .footer-cta-form .title {
+    max-width: 550px;
+    margin: 0 auto 18px;
+}
+
+.gamfi-footer-section .footer-cta-form .title img {
+    position: relative;
+    top: -5px;
+}
+
+.gamfi-footer-section .footer-cta-form form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 570px;
+    margin: 0 auto;
+}
+
+.gamfi-footer-section .footer-area {
+    background: url(../images/bg/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    position: relative;
+    padding-top: 250px;
+    margin-top: -150px;
+}
+
+.gamfi-footer-section .footer-listing .footer-icon-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.gamfi-footer-section .footer-listing .footer-icon-list li {
+    display:inline-block;
+}
+
+.gamfi-footer-section .footer-listing .footer-icon-list i {
+    color: #fff;
+    background: url(../images/icons/icon-image.png);
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    display: inline-block;
+    margin: 0 12px;
+    transition: 0.4s;
+    font-size: 20px;
+}
+
+.gamfi-footer-section .footer-listing .footer-icon-list i:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.gamfi-footer-section .footer-mainmenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.gamfi-footer-section .footer-mainmenu ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.gamfi-footer-section .footer-mainmenu ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.4s;
+}
+
+.gamfi-footer-section .footer-mainmenu ul li a:hover {
+    color: #fff;
+}
+
+.gamfi-footer-section .copyright-area .gafi {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.gamfi-footer-section .copyright-area .gafi:hover {
+    color: #fff;
+}
+
+.scrollup {
+    padding-top: 10px;
+    padding-bottom: 35px;
+}
+
+.scrollup i {
+    font-weight: 700;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.4s;
+}
+
+.scrollup i:hover {
+    color: #fff;
+}
+
+/* ------------------------------------
+    19. Modal Section CSS
+---------------------------------------*/
+.modal .modal-dialog {
+    max-width: 440px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.modal-content {
+    background: #1E1F35;
+    padding: 30px 35px 5px;
+}
+
+.modal-content p {
+    font-size: 14px;
+}
+
+.modal-content .modal-header {
+    border: none;
+    padding-bottom: 8px;
+}
+
+.modal-content .modal-header i {
+    font-size: 15px;
+    color: #fff;
+}
+
+.modal-content .connect-section .heading-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.modal-content .connect-section .heading-list li {
+    display: block;
+    background: #292A3F;
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.modal-content .connect-section .heading-list li span {
+    width: 35px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.modal-content .connect-section .heading-list li:before {
+    content: "\e902";
+    position: absolute;
+    top: 22px;
+    right: 30px;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: "icomoon";
+    font-size: 10px;
+}
+
+.modal-content .connect-section .heading-list li a {
+    color: #fff;
+    font-family: "Russo One", sans-serif;
+}
+
+/*
+.modal-content .connect-section .heading-list li a:hover {
+  color: #a3ff12;
+}
+*/
+.modal-content .modal-title {
+    color: #fff;
+    transition: 0.4s;
+    font-weight: 600;
+}
+
+.modal-content .modal-title:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#shareIocns .modal-header .btn-close {
+    position: relative;
+    right: 26px;
+    top: -7px;
+}
+
+#shareIocns .modal-content {
+    padding-right: 10px;
+}
+
+#shareIocns .popup-share-icons {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -14px;
+}
+
+#shareIocns .popup-share-icons li {
+    flex: 0 0 auto;
+    width: 21%;
+    margin-left: 14px;
+}
+
+#shareIocns .popup-share-icons li i {
+    color: #fff;
+    background: url(../images/icons/icon-image.png);
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    display: inline-block;
+    margin: 0 0 25px;
+    transition: 0.4s;
+    font-size: 20px;
+    text-align: center;
+}
+
+#shareIocns .modal-content .modal-header {
+    padding-bottom: 15px;
+}
+
+#shareIocns .popup-share-icons li i:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#shareIocns .popup-share-icons li a {
+    display: block;
+}
+
+/*-------------------------------------
+    20. Preloader CSS
+---------------------------------------*/
+section.loader_first {
+    background-color: #151625;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+
+.loader_first .circular-spinner {
+    width: 60px;
+    height: 60px;
+    border: 10px solid rgba(255, 255, 255, 0.1);
+    border-top: 10px solid #a3ff12;
+    border-radius: 50%;
+    animation: pre_rotate 1.5s linear infinite;
+    position: absolute;
+    left: 49%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*------------------------------------
+    modal-backdrop
+------------------------------------*/
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100vw;
+    height: 100vh;
+    filter: blur(1px);
+    backdrop-filter: blur(1px);
+    background: rgba(0, 0, 12, 0.8)
+}
+
+.modal-backdrop.in {
+    opacity: 1 !important;
+}
+
+.modal-dialog-centered {}
+
+@keyframes pre_rotate {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*--------------------
+  Kyc Sereen
+--------------------*/
+.Gamfi_Header_contentright {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+.Gamfi_Header_contentright h2 {
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    color: #FFFFFF;
+}
+.Gamfi_Header_ProgressBar .progress-bar-striped {
+    background-image: linear-gradient(72deg, rgba(0, 0, 0, .20) 50%, transparent 56%, transparent 84%, rgba(0, 0, 0, .20) 2%, rgba(0, 0, 0, .20) 90%, transparent 121%, transparent);
+    background-size: 1rem 1rem;
+    width: 33.33333%;
+}
+.Gamfi_Header_ProgressBar .progress {
+    background: rgba(255, 255, 255, 0.15);
+    height: 12px;
+    border-radius: 0px;
+    width: 470px;
+    margin-left: 19px;
+    overflow: hidden;
+}
+.Gamfi_Header_ProgressBar .progress-bar {
+    background-color: #A3FF12;
+}
+.kycFormSect {
+    padding-top: 56px;
+    background: #090A1A;
+    padding-bottom: 140px;
+    ;
+}
+
+.kycForm {}
+.kycForm h3 {
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 45px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.kycForm p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 18px;
+}
+.kycCountryDropbox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 60px;
+    max-width: 570px;
+    width: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    box-sizing: border-box;
+    padding: 17px 20px;
+    margin-bottom: 35px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 17px;
+}
+.kycCountryDropbox::after {
+    content: "\e901";
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: "icomoon";
+    font-size: 7px;
+}
+.kycCountryDropbox span {}
+.kycCountryDropbox h4 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 45px;
+    margin-left: 14px;
+    margin-bottom: 0px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.Gamfi_Container {
+    max-width: 1210px;
+    padding: 0px 20px;
+    width: 100%;
+    margin: 0px auto;
+}
+.KycRadioSect{
+    padding-bottom: 10px;
+}
+.KycRadioBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(30, 31, 53, 0.8);
+    height: 60px;
+    max-width: 570px;
+    width: 100%;
+    padding: 8px 20px;
+    margin-bottom: 25px;
+}
+.KycRadioBtn .Kycicon {
+    opacity: 0.3;
+}
+.KycRadioBtn.active .Kycicon,
+.KycRadioBtn:hover .Kycicon {
+    opacity: 1;
+}
+.KycRadioBtn .container {
+    display: block;
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+.KycRadioBtn.active .container,
+.KycRadioBtn:hover .container {
+    color: #ffffff;
+}
+
+.KycRadioBtn .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.KycRadioBtn .checkmark {
+    position: absolute;
+    top: 13px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+}
+.KycRadioBtn .container:hover input ~ .checkmark {
+    opacity: 0.8;
+}
+.KycRadioBtn .container input:checked ~ .checkmark {
+    background-color: #6D4AFE;
+    ;
+    border: none;
+}
+.KycRadioBtn .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.KycRadioBtn .container input:checked ~ .checkmark:after {
+    display: block;
+}
+.KycRadioBtn .container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 4px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.kycForm button {
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 570px;
+    width: 100%;
+    background: #6D4AFE;
+    height: 60px;
+    border: none;
+    outline: none;
+}
+.kycQrcodeSect {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.kycQrcode_content {
+    max-width: 300px;
+    width: 100%;
+}
+.kycQrcode_content h2 {
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+}
+.kycQrcodeImg {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    box-sizing: border-box;
+}
+.kycCountryDropdownSect {
+    position: relative;
+}
+.kycCountryDropList {
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0px;
+    z-index: 1;
+    display: none;
+}
+.kycCountryDropList ul {
+    background: rgba(30, 31, 53, 1);
+    max-width: 570px;
+    width: 100%;
+    box-shadow: 4px;
+}
+.kycCountryDropList ul li {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.7);
+    height: 42px;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+.kycCountryDropList ul li:hover {
+    color: #ffffff;
+}
+
+
+/*------------------
+    TeamDetails
+------------------*/
+.TeamDetailsSect {
+    background: #090B1A;
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 140px;
+}
+
+.TeamDetailsContainer {
+    max-width: 1210px;
+    padding: 0px 20px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.TeamDetailsImg {
+    max-width: 470px;
+    width: 100%;
+    height: 578px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(30, 31, 53, 0.7);
+}
+.TeamDetailsImg img{
+    max-width: 70%;
+}
+
+.TeamMembersInfo {
+    padding-left: 20px;
+}
+
+.TeamMembersInfo h2 {
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 1.4;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+}
+
+.TeamMembersInfo h3 {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 21px;
+}
+
+.TeamMembersInfo p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 17px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.TeamMembersContact {}
+
+.TeamMembersContact ul {}
+
+.TeamMembersContact ul li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.TeamMembersContact ul li strong {
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 40px;
+    color: rgba(255, 255, 255, 0.7);
+    width: 150px;
+}
+
+.TeamMembersContact ul li span {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 40px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+}
+
+.TeamMembersContact ul li .socialLink {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.TeamMembersContact ul li .socialLink a {
+    transition: 0.4s;
+    padding: 0 7px;
+}
+
+.TeamMembersContact ul li .socialLink a i {
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.TeamMembersContact ul li .socialLink a:hover i {
+    opacity: 70%;
+}
+
+
+/*---------------------
+Kyc Upload Docs
+----------------------*/
+.kycForm .UploadDocSect {}
+.kycForm .UploadDocSect ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;width: 100%;
+    max-width: 570px;
+}
+.kycForm .UploadDocSect ul li{
+    text-align: center;
+    width: 32%;
+}
+.kycForm .UploadDocSect ul li h4 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 45px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 175px;
+    margin: auto;
+    margin-bottom: 0px;
+    width: 100%;
+    margin-left: 0px;
+}
+.kycForm .UploadDocSect h3 {
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 45px;
+    margin-bottom: 17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.kycForm .UploadBtnBg{
+    height: 175px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(30, 31, 53, 0.8);
+}
+.kycForm .UploadDocSect .upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.kycForm .UploadDocSect .upload-btn-wrapper span {
+    background: transparent;
+    border: 2px dashed rgba(255, 255, 255, 0.15);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    width: 75px;
+}
+.kycForm .UploadDocSect .upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.UploadDocCheckList {
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 570px;
+    padding: 16px 30px;
+    margin-bottom: 35px;
+}
+.UploadDocCheckList ul{}
+.UploadDocCheckList ul li {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 158%;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.UploadDocCheckList ul li span{
+    filter: grayscale(100%);
+    opacity: 0.7;
+    margin-right: 14px;
+    min-width: 14px;
+}
+.UploadDocCheckList ul li.active{
+    color: #ffffff;
+}
+.UploadDocCheckList ul li.active span{
+    filter: grayscale(0%);
+    opacity: 1;
+}
+.NidNumberSect{
+    margin-bottom: 40px;
+}
+.NidNumberSect h3{
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 45px;
+    margin-bottom: 17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.NidNumberSect form{}
+.NidNumberSect form input {
+    width: 100%;
+    max-width: 570px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    box-sizing: border-box;
+    height: 60px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 8px 21px;
+    background: transparent;
+    outline: none;
+}
+
+.kycPersonalinfoForm{}
+.kycPersonalinfoForm form{
+    width: 100%;
+    max-width: 571px;
+    margin-top: 20px;
+}
+.kycPersonalinfoForm form .InputNameSect{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.kycPersonalinfoForm form .InputNameSect .FirstNameFild{
+    width: 48%;
+}
+.kycPersonalinfoForm form .InputNameSect .LastNameFild{
+    width: 48%;
+}
+.kycPersonalinfoForm form lable {
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+.kycPersonalinfoForm form input {
+    height: 60px;
+    width: 100%;
+    padding: 8px 21px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    box-sizing: border-box;
+    background: Transparent;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 23px;
+}
+
+.kycPersonalinfoForm form .InputAddressSect{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.kycPersonalinfoForm form .InputAddressSect .Address1Fild{
+    width: 48%;
+}
+.kycPersonalinfoForm form .InputAddressSect .Address2Fild{
+    width: 48%;
+}
+.kycPersonalinfoForm form .InputCitySect{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.kycPersonalinfoForm form .InputCitySect .CityFild{
+    width: 48%;
+}
+.kycPersonalinfoForm form .InputCitySect .PostCodeFild{
+    width: 48%;
+}
+
+
+.KYC_TramsAndCondetionSect{
+    position: relative;
+    margin-bottom: 28px;
+    margin-top: 7px;
+}
+.KYC_TramsAndCondetionSect label {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 158%;
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 14px;
+}
+.KYC_TramsAndCondetionSect label a {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 158%;
+    color: #6D4AFE;
+}
+.KYC_TramsAndCondetionSect .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    display: none;
+}
+.KYC_TramsAndCondetionSect .checkmark {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+}
+.KYC_TramsAndCondetionSect .container:hover input ~ .checkmark {
+    opacity: 0.8;
+}
+.KYC_TramsAndCondetionSect .container input:checked ~ .checkmark {
+    background-color: #6D4AFE;
+    ;
+    border: none;
+}
+.KYC_TramsAndCondetionSect .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.KYC_TramsAndCondetionSect .container input:checked ~ .checkmark:after {
+    display: block;
+}
+.KYC_TramsAndCondetionSect .container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 4px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.KycYourDocumentsSect{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.KycYourDocumentsContent{
+    text-align: left;
+    max-width: 300px;
+    width: 100%;
+}
+
+.KycYourDocumentsContent h3 {
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 158%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.KycYourDocumentsContent ul{
+    background: rgba(30, 31, 53, 0.8);
+    padding: 16px 30px;
+}
+.KycYourDocumentsContent ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.KycYourDocumentsContent ul li p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0px;
+}
+.KycYourDocumentsContent ul li p span{
+    margin-right: 14px;
+}
+.KycYourDocumentsContent ul li span.Downloadicon{}
+
+.HelpCenterBtn a{
+    width: 170px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.GetinTouchForm{}
+.GetinTouchForm form{
+    width: 100%;
+    max-width: 571px;
+    margin-top: 20px;
+}
+.GetinTouchForm form .InputNameSect{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.GetinTouchForm form .InputNameSect .FirstNameFild{
+    width: 48%;
+}
+.GetinTouchForm form .InputNameSect .LastNameFild{
+    width: 48%;
+}
+.GetinTouchForm form lable {
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+.GetinTouchForm form input {
+    height: 60px;
+    width: 100%;
+    padding: 8px 21px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    box-sizing: border-box;
+    background: Transparent;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 23px;
+}
+.GetinTouchForm form textarea {
+    height: 130px;
+    width: 100%;
+    padding: 8px 21px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    box-sizing: border-box;
+    background: Transparent;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 40px;
+    resize: none;
+}
+
+.black-shape-bigCustom{
+    position: relative;
+    overflow: hidden;
+}
+.black-shape-bigCustom img,
+.black-shape-bigCustom .btn-text{
+    position: relative;
+    z-index: 9;
+}
+.black-shape-bigCustom .hover-shape1,
+.black-shape-bigCustom .hover-shape2,
+.black-shape-bigCustom .hover-shape3 {
+    position: absolute;
+    width: 5px;
+    background: rgba(0, 0, 0, 0.1);
+    height: 124%;
+    left: -42%;
+    top: -5px;
+    transform: rotate(22deg);
+    transition: 0.8s;
+}
+.black-shape-bigCustom .hover-shape3{
+    width: 11px;
+}
+.black-shape-bigCustom:hover .hover-shape1{
+    left: 44.8%;
+}
+.black-shape-bigCustom:hover .hover-shape2 {
+    left: 46.8%;
+}
+.black-shape-bigCustom:hover .hover-shape3{
+    left: 48.8%;
+}
+
+.GetInTouch_Contuct_Sect{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    max-width: 363px;
+    width: 100%;
+    margin-left: auto;
+    padding-left: 30px;
+}
+.GetInTouch_Contuct_Content{
+    text-align: left;
+}
+.GetInTouch_Contuct_Content h2 {
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.cotactInfoContent{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+.cotactInfoContent .cotactInfoSymbol{
+    margin-top: 9px;
+}
+.cotactInfoContent .cotactInfoText{
+    margin-left: 22px;
+}
+.cotactInfoContent .cotactInfoText h5 {
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+}
+.cotactInfoContent .cotactInfoText h6 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0px;
+}
+.cotactInfoContent .cotactInfoText a {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 45px;
+    color: #6D4AFE;
+}
+
+/*------------------------
+    SignUp-SignIn
+------------------------*/
+.SignUp_SignIn_Form_Sect{
+    background: #090A1A;
+    position: relative;
+    padding: 96px 0px 0px 0px;
+}
+.SignUp_SignIn_Form_SectBG {
+    background: url(../images/kycimg/signUpBgimage.svg);
+    background-position: center center;
+    background-size: cover;
+    height: 340px;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+}
+.SignUp_SignIn_Form_Content{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding-bottom: 150px;
+    max-width: 690px;
+    margin: auto;
+}
+.SignUp_SignIn_Form{
+    background: rgba(30, 31, 53, 0.8);
+    max-width: 690px;
+    width: 100%;
+    margin: auto;
+    padding: 63px 60px 56px 60px;
+    position: relative;
+    z-index: 2;
+}
+.singUpformShadow{
+    background: url(../images/kycimg/BlurShadow.svg);
+    background-position: center center;
+    background-size: cover;
+    height: 340px;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    bottom: 5px;
+    z-index: 1;
+}
+.SignUp_SignIn_Form h2 {
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+    color: #FFFFFF;
+}
+.SignUp_SignIn_Form h3 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: none;
+    max-width: 430px;
+    margin: auto;
+    margin-bottom: 29px;
+}
+.SignUp_SignIn_Form.signInForm h3 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: none;
+    max-width: 356px;
+    margin: auto;
+    margin-bottom: 29px;
+}
+.SignUp_SignIn_Form.ForgotPassForm h3 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: none;
+    max-width: 356px;
+    margin: auto;
+    margin-bottom: 29px;
+}
+.SignUp_SignIn_Form{}
+.SignUp_SignIn_Form form{}
+.SignUp_SignIn_Form form lable {
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 5px;
+}
+.SignUp_SignIn_Form form input{
+    width: 100%;
+    margin-bottom: 23px;
+    background: transparent;
+    outline: none;
+    height: 60px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    box-sizing: border-box;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 8px 21px;
+}
+.SignUp_SignIn_Form form button {
+    width: 100%;
+    height: 60px;
+    background: #6D4AFE;
+    border: none;
+    outline: none;
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.SignUp_SignIn_Form h4 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 31px;
+    margin-bottom: 0px;
+}
+.SignUp_SignIn_Form h4 a {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #6D4AFE;
+}
+
+.forgetPassBtnSect{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    margin-top: 10px;
+}
+.forgetPassBtnSect .ForgetPass a {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 45px;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.SignUp_SignIn_Form.ForgotPassForm .EmailFild{
+    margin-bottom: 17px;
+}
+
+/*------------------------
+    RoadMap
+------------------------*/
+.RoadMapDuration{}
+.RoadMapDuration h6 {
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 55px;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.7);
+}
+.gamfiRoadMap   {
+    padding-bottom:0px;
+    padding-top: 0px;
+    background: #090A1A;
+    position: relative;
+}
+.RoadMapSect{
+    background: #090A1A;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(../images/kycimg/roadmapScreenbg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.RoadMapContainer{
+    position: relative;
+    z-index: 1
+}
+.roadMapDivider{
+    position: absolute;
+    top: 0px;
+    z-index: 0;
+    background: transparent;
+}
+.RoadMapSect .roadMapDivider img{
+    height: 60%;
+}
+.RodmapLeftConetent{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-right: 30px;
+}
+.RodmapRightConetent{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-left: 30px;
+}
+.RodmapConetentbox{
+    max-width: 470px;
+    width: 100%;
+    height: 100%;
+    padding: 35px 39px 26px 39px;
+}
+
+.RodmapConetentbox1{
+    background: url(../images/kycimg/roadMapcpntentBg1.svg);
+    min-height: 253px;
+    margin-top: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.RodmapConetentbox2{
+    background: url(../images/kycimg/roadMapcpntentBg5.svg);
+    min-height: 216px;
+    margin-top: 190px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.RodmapConetentbox3{
+    background: url(../images/kycimg/roadMapcpntentBg2.svg);
+    min-height: 216px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.RodmapConetentbox4{
+    background: url(../images/kycimg/roadMapcpntentBg6.svg);
+    min-height: 253px;
+    margin-top: 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.RodmapConetentbox5{
+    background: url(../images/kycimg/roadMapcpntentBg3.svg);
+    min-height: 290px;
+    margin-top: 123px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.RodmapConetentbox6{
+    background: url(../images/kycimg/roadMapcpntentBg7.svg);
+    min-height: 290px;
+    margin-top: 253px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 47px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.RodmapConetentbox7{
+    background: url(../images/kycimg/roadMapcpntentBg4.svg);
+    min-height: 216px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.RodmapConetentbox h3 {
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 158%;
+    color: #c08b2f;
+    margin-bottom: 10px;
+}
+.RodmapConetentbox.disable  h3{
+    color: rgba(255, 255, 255, 0.7);
+}
+.RodmapConetentbox ul{
+    
+}
+.RodmapConetentbox ul li {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 158%;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.RodmapConetentbox ul li span{
+    margin-right: 15px;
+}
+
+.connectWalletBtnforMobile{
+    width: 100%;
+    background: #6D4AFE;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.connectWalletBtnforMobile .btn-text{
+    color: #ffffff;
+    padding-left: 10px;
+}
+
+
+
+.Roadmap2021, .Roadmap2022{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.roadmap2021Divider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    min-height: 825px;
+    top: 0px;
+    width: 50px;
+    background: url(../images/kycimg/Roadmap2021.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.roadmap2021Divider span {
+    transform: rotate(270deg);
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.roadmap2022Divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    min-height: 752px;
+    top: 65px;
+    width: 50px;
+    background: url(../images/kycimg/Roadmap2022.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.roadmap2022Divider span {
+    transform: rotate(270deg);
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+

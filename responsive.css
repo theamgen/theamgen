@@ -1,0 +1,1365 @@
+@charset "utf-8";
+
+/** 
+*
+* -----------------------------------------------------------------------------
+* Template : GamFi - Metaverse Web3 IGO/IDO Token Launchpad Figma Template
+* Author : uigigs
+* Author URI : http://www.uigigs.com/
+*
+* -----------------------------------------------------------------------------
+*
+**/
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  
+}
+@media only screen and (max-width: 1366px) {
+  
+}
+@media only screen and (max-width: 1199px) {
+    .gamfi-header-section .header-menu ul li + li {
+        margin-left: 25px;
+    }
+    .gamfi-about-secion .game-price-item .price-details h3{
+        font-size: 24px;
+    }
+    .gamfi-about-secion .game-price-item{
+        padding: 30px;
+    }
+    .gamfi-previous-section .previous-item .previous-chaining img {
+        margin-right: 60px;
+    }
+    .gamfi-previous-section .previous-item .previous-raise .progress-inner {
+        width: 140px;
+    }
+    .gamfi-previous-section .previous-item .previous-raise span {
+        margin-right: 15px;
+    }
+    .gamfi-project-section .project-item{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .gamfi-project-section .project-item .heading-title h4:before {
+         left: -21px;
+    }
+    .gamfi-project-section .project-item h4{
+        font-size: 20px;
+    }
+    .gamfi-tokenomics-section .pr-63,
+    .gamfi-tokenomics-section .pr-63,
+    .gamfi-tokenomics-section .pr-60{
+        padding-right: 40px;
+    }
+    .gamfi-calendar-list .calender-date {
+        padding: 15px;
+        width: 13%;
+    }
+    .gamfi-previous-section .previous-mainmenu .menu-list.date-menu {
+        padding: 0;
+    }
+    .gamfi-breadcrumbs-section .breadcrumbs-form input[type="text"] {
+        width: 330px;
+    }
+    .igo-rankging-table-list tr th, .igo-rankging-table-list tr td {
+        width: 12.28%;
+        padding: 20px 12px;
+    }
+    .igo-rankging-table-list tr th:nth-child(2), .igo-rankging-table-list tr td:nth-child(2) {
+        width: 28%;
+    }
+    .igo-rankging-table-list tr .image-row {
+        padding-top: 14.5px;
+        padding-bottom: 14.5px;
+    }
+    .gamfi-farming-table tr th, .gamfi-farming-table tr td {
+        width: 15.666%;
+    }
+    .gamfi-farming-table tr th:nth-child(5) {
+        width: 24.666%;
+    }
+    .gamfi-farming-content .expeand-centent .farm-form-list input {
+        padding: 7px 10px;
+        font-size: 14px;
+    }
+    .project-summary-menu {
+        padding: 48px 30px 15px;
+    }
+    .project-summary-menu .nav button {
+        margin-bottom: 15px;
+    }
+    .project-details-conent .game-price-inner .image-icon img{
+        max-width: 80px;
+    }
+    .gamfi-about-secion .game-price-item .game-price-inner .price-inner .image-icon {
+        margin-right: 15px;
+    }
+    .gamfi-about-secion .game-price-item .game-price-inner .allocation-max .allocation {
+        margin-top: 55px;
+    }
+    .project-details-conent .game-price-item .price-counter {
+        margin-bottom: 26px;
+    }
+    .project-details-conent table td {
+        padding: 17px 15px;
+        font-size: 15px;
+    }
+    .project-details-conent table .table-header th {
+        padding: 17px 20px;
+    }
+    .project-details-conent table .table-header th:nth-child(2) {
+        padding-left: 30px;
+    }
+    .project-details-conent .project-service {
+        padding: 50px 70px 25px;
+    }
+    .project-meta-item .meta-counter,
+    .project-meta-item .meta-counter:first-child,
+    .project-meta-inner .meta-header,
+    .project-details-conent .project-item {
+        padding: 35px 25px;
+    }
+    .project-meta-item .meta-counter{
+        padding-top: 0;
+    }
+    .project-details-conent .project-item .date-listing li label {
+        padding: 8px 12px;
+        font-size: 15px;
+    }
+    .project-details-conent .project-item .project-form-list .balance-form-area input[type="submit"] {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 128px;
+        font-size: 15px;
+    }
+    .participat-information .project-item h4{
+        font-size: 20px;
+    }
+    .participat-information .project-item h3{
+        font-size: 24px;
+    }
+    
+}
+@media (max-width: 1199px){
+    .Gamfi_Header_contentright{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .Gamfi_Header_ProgressBar .progress{
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .gamfi-project-section .project-item .dsc{
+        font-size: 13px;
+    }
+    .gamfi-previous-section .previous-item .previous-raise span {
+        font-size: 14px;
+    }
+    .gamfi-calendar-list .calender-date > ul > li {
+        max-width: 24px;
+    }
+    .gamfi-farming-content .default-centent {
+        padding: 10px;
+    }
+    .project-details-conent .game-price-item .targeted-raise .targeted-raise {
+        top: -8px;
+    }
+    .RodmapLeftConetent{
+        padding-right:30px;
+    }
+    .RodmapRightConetent{
+        padding-left:30px;
+    }
+    .RodmapConetentbox{
+        max-width: 415px;
+        padding: 20px 25px;
+    }
+    .RodmapConetentbox1{
+        min-height: 15px;
+    }
+    .RodmapConetentbox2{
+        min-height: 185px;
+    }
+    .RodmapConetentbox3{
+        min-height: 158px;
+    }
+    .RodmapConetentbox4{
+        min-height: 230px;
+        background: url(../images/kycimg/roadMapcpntentBg5.svg);
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+    .RodmapConetentbox5{
+        min-height: 260px;
+        background: url(../images/kycimg/roadMapcpntentBg3.svg);
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .RodmapConetentbox6 {
+        background: url(../images/kycimg/roadMapcpntentBg7.svg);
+        min-height: 230px;
+        background-repeat: no-repeat;
+        background-size: cover;  
+    }
+    .RodmapConetentbox7{
+        min-height: 185px;
+    }
+    .roadmap2021Divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        min-height: 775px;
+        top: 0px;
+        width: 50px;
+        background: url(../images/kycimg/Roadmap2021.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .roadmap2022Divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        min-height: 675px;
+        top: 65px;
+        width: 50px;
+        background: url(../images/kycimg/Roadmap2022.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .RodmapLeftConetent{
+        padding-right:30px;
+    }
+    .RodmapRightConetent{
+        padding-left:30px;
+    }
+    .RodmapConetentbox{
+        max-width: 305px;
+        padding: 20px 25px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .RodmapConetentbox ul li{
+        font-size: 14px;
+    }
+    .RodmapConetentbox1{
+        min-height: 158px;
+        background: url(../images/kycimg/roadMapcpntentBg1.svg);
+        background-position: right;
+        background-size: cover;
+    }
+    .RodmapConetentbox2{
+        min-height: 185px;
+        background: url(../images/kycimg/roadMapcpntentBg5.svg);
+        background-position: left;
+        background-size: cover;
+    }
+    .RodmapConetentbox3{
+        min-height: 158px;
+        background: url(../images/kycimg/roadMapcpntentBg2.svg);
+        background-position: right;
+        background-size: cover;
+    }
+    .RodmapConetentbox4{
+        min-height: 216px;
+        background: url(../images/kycimg/roadMapcpntentBg6.svg);
+        background-position: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .RodmapConetentbox5{
+        min-height: 260px;
+        background: url(../images/kycimg/roadMapcpntentBg3.svg);
+        background-position: right;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .RodmapConetentbox6 {
+        background: url(../images/kycimg/roadMapcpntentBg7.svg);
+        min-height: 230px;
+        background-position: left;
+        background-size: cover;
+        background-repeat: no-repeat; 
+    }
+    .RodmapConetentbox7{
+        min-height: 185px;
+        background: url(../images/kycimg/roadMapcpntentBg4.svg);
+        background-position: right;
+        background-size: cover;
+        background-repeat: no-repeat; 
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .gamfi-header-section .gamfi-btn-area ul .nav-expander{
+        display: none;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .breadcrumbs-form .gamfi-navigation {
+        margin-left: 20px;
+    }
+    .kycForm .UploadDocSect ul li h4 {
+        font-size: 11px;
+    }
+    
+    .kycPersonalinfoForm form .InputNameSect, .kycPersonalinfoForm form .InputAddressSect, .kycPersonalinfoForm form .InputCitySect{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .kycPersonalinfoForm form .InputNameSect .FirstNameFild, .kycPersonalinfoForm form .InputNameSect .LastNameFild, .kycPersonalinfoForm form .InputAddressSect .Address1Fild, .kycPersonalinfoForm form .InputAddressSect .Address2Fild, .kycPersonalinfoForm form .InputCitySect .CityFild, .kycPersonalinfoForm form .InputCitySect .PostCodeFild {
+        width: 100%;
+    }
+    .roadmap2021Divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        min-height: 750px;
+        top: 0px;
+        width: 50px;
+        background: url(../images/kycimg/Roadmap2021.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .roadmap2022Divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        min-height: 650px;
+        top: 65px;
+        width: 50px;
+        background: url(../images/kycimg/Roadmap2022.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .gamfi-header-section .heaader-inner-area ul li.buy-token,
+    .gamfi-header-section .header-menu{
+        display: none;
+    }
+    .sc-banner .banner-content .banner-title {
+        margin: 0 0 20px;
+        font-size: 40px;
+    }
+    .banner-btn{
+        padding: 14px 30px;
+    }
+    .gamfi-about-secion .game-price-item .game-price-inner .price-inner,
+    .gamfi-about-secion .game-price-item .game-price-inner{
+        display: block !important;
+    }
+    .gamfi-about-secion .allocation-max,
+    .gamfi-about-secion .total-price, 
+    .gamfi-about-secion .targeted-raise{
+        width: 100%;
+    }
+    .gamfi-about-secion .game-price-item .game-price-inner .allocation-max .allocation {
+        margin-top: 35px;
+    }
+    .gamfi-about-secion .game-price-item .game-price-inner .targeted-raise .targeted-raise,
+    .gamfi-about-secion .game-price-item .game-price-inner .all-raise,
+    .gamfi-about-secion .game-price-item .game-price-inner .price-inner{
+      text-align: center !important;
+    }
+    .gamfi-about-secion .game-price-item .game-price-inner .targeted-raise .targeted-raise,
+    .gamfi-about-secion .game-price-item .game-price-inner .price-inner .image-icon{
+      margin-bottom: 10px;
+    }
+    .gamfi-about-secion .game-price-item .game-price-inner .price-inner .image-icon{
+      margin-right: 0;
+    }
+    .banner-slider-inner .timer {
+      max-width: 400px;
+      margin: 0 auto 20px;
+    }
+    .sc-banner {
+        padding: 150px 0 200px;
+    }
+    .participate-item .number-image {
+        flex: 0 0 15%;
+    }
+    .apply-heading h2,
+    .gamfi-footer-section .footer-cta-area .title,
+    .sec-heading .title{
+        font-size: 30px;
+    }
+    .gamfi-project-section{
+        padding-top: 75px;  
+        padding-bottom: 45px;  
+    }
+    .gamfi-previous-section .previous-item {
+        padding: 20px;
+    }
+    .gamfi-previous-section .previous-item .previous-gaming .previous-price h4{
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+    .gamfi-previous-section .previous-item .previous-chaining img {
+        margin-right: 20px;
+    }
+    .gamfi-previous-section .previous-item .previous-gaming img {
+        width: 50px;
+    }
+    .gamfi-previous-section .previous-mainmenu ul .list1 {
+        width: 31.5%;
+    }
+    .gamfi-tokenomics-section .tokenomics-menu,
+    .gamfi-tokenomics-section .pr-63, .gamfi-tokenomics-section .pr-63, .gamfi-tokenomics-section .pr-60 {
+        padding-right: 30px;
+    }
+    .gamfi-footer-section .footer-listing .footer-icon-list i {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        margin: 0 8px;
+        font-size: 18px;
+    }
+    .gamfi-footer-section .footer-area {
+        padding-top: 220px;
+    }
+    .gamfi-footer-section .footer-cta-area {
+        padding: 60px 20px
+    }
+    .gamfi-team-section .team-item img {
+        margin-bottom: 30px;
+    }
+    .gamfi-about-secion .game-price-item .price-details h3{
+        margin-bottom: 5px;
+    }
+    .gamfi-breadcrumbs-section .breadcrumbs-form {
+        justify-content: flex-start;
+    }
+    .gamfi-footer-section .copyright-area .dsc{
+        margin-bottom: 25px;
+    }
+    .gamfi-previous-section .previous-mainmenu .menu-list .date-list {
+        width: 12%;
+    }
+    .gamfi-calendar-list{
+        justify-content: flex-start;
+    }
+    .gamfi-calendar-list .calender-date {
+        width: 24%;
+    }
+    .project-menu-area ul li a, .project-menu-area ul li .tab-link {
+        padding: 14px 13px;
+    }
+    .project-menu-area ul li:last-child{
+        border: none;
+    }
+    .gamfi-farming-table tr th:first-child, 
+    .gamfi-farming-table tr td:first-child {
+        width: 14.666%;
+    }
+    .gamfi-farming-table tr th:nth-child(5) {
+        width: 35.666%;
+    }
+    .gamfi-farming-content .list-1 {
+        flex: 0 0 32%;
+        width: 32%;
+    }
+    .project-menu-area .al-access-menu > li:after, 
+    .project-menu-area .al-access-menu > li:before {
+        top: 22px;
+    }
+    .gamfi-farming-content .list-content {
+        flex: 0 0 100%;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .gamfi-farming-content .default-centent,
+    .gamfi-farming-content .expeand-bottom-content .expeand-centent .expeand-farm{
+        display: block !important;
+    }
+    .gamfi-farming .farm-form-list{
+        width: 100%;
+    }
+    .gamfi-farming-content .default-centent{
+        padding-top: 28px;
+    }
+    .gamfi-farming-table table{
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+    .gamfi-farming .farm-form-list {
+        margin-bottom: 30px;
+    }
+    .gamfi-farming .farm-form-list:last-child{
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+    .gamfi-farming .farm-form-list .farm-form{
+        margin-bottom: 0;
+    }
+    .igo-rankging-table-list tr th:nth-child(2), 
+    .igo-rankging-table-list tr td:nth-child(2) {
+        min-width: 225px;
+    }
+    .igo-rankging-table-list tr th:last-child, 
+    .igo-rankging-table-list tr td:last-child {
+        width: 10.28%;
+    }
+    .igo-rankging-table-list tr th, 
+    .igo-rankging-table-list tr td {
+        padding: 20px 5px;
+    }
+    .igo-rankging-table-list tr .image-row img {
+        margin-right: 5px;
+    }
+    .igo-rankging-table-list tr{
+        display: flex;
+    }
+    .gamfi-previous-section .previous-mainmenu ul li,
+    .igo-rankging-table-list tr th{
+        font-size: 14px;
+    }
+
+    .leaderboard-table-list tr th,
+    .leaderboard-table-list tr td {
+        padding: 15px 8px;
+        font-size: 15px;
+    }
+    .gamfi-previous-section .previous-item .previous-gaming .previous-price .dsc {
+        font-size: 14px;
+    }
+    .project-details-conent .game-price-item .price-counter{
+        max-width: 300px;
+        margin: 0 auto 20px;
+    }
+    .project-details-conent .banner-bottom-content .social-icon-list li {
+        margin-left: 0;
+    }
+    .project-details-conent .project-item {;
+        padding: 35px 20px;
+    }
+    .project-details-conent .project-service{
+        display: block;
+    }
+    .project-details-conent .project-service .project-image{
+        margin: 0 0 40px;
+    }
+    .project-summary-menu .nav button img{
+        display: none;
+    }
+    .project-details-conent .project-service {
+        padding: 50px 40px 25px;
+    }
+    .project-details-conent .banner-bottom-content .social-icon-list li i,
+    .project-details-conent .game-price-item .text-content {
+        font-size: 15px;
+    }
+    .project-details-conent .readon {
+        padding: 8px 15px;
+    }
+    .project-details-conent .project-item .project-info {
+        margin-bottom: 0;
+    }
+    .participat-information .project-item .date-listing{
+        padding-top: 20px;
+    }
+    .project-details-conent .project-item ul.date-listing {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .Gamfi_Header_contentright {
+        display: block;
+        margin-top: 10px;
+    }
+    
+}
+
+@media (max-width: 991px){
+    .gamfi-breadcrumbs-section .breadcrumbs-form.breadcrumbsprogress_BarCustom {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start !important;
+        margin-top: 25px;
+    }
+    .Gamfi_Header_ProgressBar .progress {
+        margin-left: 0px;
+        margin-top: 10px;
+        width: 400px;
+    }
+    .kycForm .UploadDocSect ul li h4{
+        width: 74%;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .sc-banner .banner-content .banner-title {
+        font-size: 30px;
+    }
+    .gamfi-footer-section .footer-cta-area .title, .sec-heading .title {
+        font-size: 26px;
+    }
+    .gamfi-previous-section .previous-mainmenu ul{
+        padding: 0;
+    }
+    .project-menu-area .project-right-menu ul li,
+    .gamfi-previous-section .previous-item,
+    body .gamfi-previous-section .previous-mainmenu ul li{
+        display: block;
+    }
+    body .gamfi-previous-section .previous-mainmenu ul li{
+        padding: 0 0 14px;
+        left:  0 !important;
+    }
+    .project-menu-area .project-right-menu ul li:first-child{
+        border:  none;
+    }
+    .gamfi-previous-section .previous-item .previous-raise,
+    .gamfi-previous-section .previous-item .previous-chaining,
+    .gamfi-previous-section .previous-item .previous-gaming{
+        width: 100% ;
+    }
+    body .gamfi-previous-section .previous-mainmenu ul li{
+        width: 100% !important;
+    }
+    .gamfi-previous-section .previous-item .previous-chaining{
+        margin: 20px 0;
+    }
+    .gamfi-header-section .white-btn {
+        padding: 9px 20px 8px;
+    }
+    .gamfi-form-content .address-form input {
+        padding: 10px 15px;
+    }
+    .gamfi-form-content .address-form .input-button i{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .gamfi-footer-section .footer-cta-area .footer-link input[type="submit"] {
+        padding: 14px 30px;
+    }
+    .gamfi-footer-section .footer-cta-area .footer-link input[type="email"] {
+        width: 290px;
+    }
+    .gamfi-calendar-list .calender-date {
+        width: 32%;
+    }
+    .project-menu-area {
+        display: block !important;
+    }
+    .gamfi-breadcrumbs-section .breadcrumbs-form input[type="text"] {
+        width: 300px;
+    }
+    .gamfi-farming .project-menu-area ul button{
+        width: 100%;
+        text-align: left;
+    }
+    .gamfi-breadcrumbs-section .breadcrumbs-form,
+    .gamfi-farming .project-menu-area ul button,
+    .gamfi-farming .project-menu-area ul{
+        display: block;
+    }
+    .gamfi-farming .form-switch {
+        padding: 8px 12px;
+    }
+    .gamfi-breadcrumbs-section .breadcrumbs-form input[type="text"]{
+        width: 100%;
+    }
+    .gamfi-breadcrumbs-section .breadcrumbs-form input[type="text"] {
+        margin: 0 0 20px;
+    }
+    body .gamfi-farming-table tr th, 
+    body .gamfi-farming-table tr td {
+        display: block;
+        width: 100% !important;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+    .gamfi-farming-content .expeand-centent .expeand-menu ul li {
+        display: block;
+        margin: 0 0 10px;
+    }
+    .leaderboard-table-list table,
+    .igo-rankging-table-list table{
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+    .leaderboard-table-list tr{
+        display: flex;
+    }
+    .igo-rankging-table-list tr th:nth-child(1),
+    .igo-rankging-table-list tr td:nth-child(1) {
+        min-width: 65px;
+    }
+    .leaderboard-table-list tr th:nth-child(3),
+    .leaderboard-table-list tr td:nth-child(3) {
+        min-width: 160px;
+    }
+    .leaderboard-table-list tr th:nth-child(2), 
+    .leaderboard-table-list tr td:nth-child(2){
+        min-width: 140px;
+    }
+    .leaderboard-table-list tr th:nth-child(1), 
+    .leaderboard-table-list tr td:nth-child(1), 
+    .leaderboard-table-list tr th:nth-child(4), 
+    .leaderboard-table-list tr td:nth-child(4) {
+        min-width: 100px;
+    }
+    .igo-rankging-table-list tr th:last-child,
+    .igo-rankging-table-list tr td:last-child {
+        min-width: 80px;
+    }
+    .igo-rankging-table-list tr td:nth-child(1) {
+        padding-left: 8px;
+    }
+    .project-details-conent .banner-bottom-content .social-icon-list li i {
+        padding-left: 5px;
+    }
+    .project-details-conent .project-value-inner .project-value-image{
+        margin-top: 15px;
+    }
+    .project-meta-item .meta-counter h3,
+    .project-details-conent .project-item h3{
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+    .project-meta-inner .meta-header p{
+        margin-bottom: 0;
+    }
+    .breadcrumbs-form .gamfi-navigation ul{
+        justify-content: flex-start;
+    }
+    .loader_first .circular-spinner {
+        left: 45%;
+    }
+    .GetInTouch_Contuct_Content {
+        padding-top: 20px;
+    }
+    .GetInTouch_Contuct_Sect {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        max-width: 330px;
+        width: 100%;
+        padding-left: 0px;
+        margin: auto;
+        margin-top: 40px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 768px){
+    .kycForm .UploadDocSect ul li h4{
+        width: 80%;
+        margin: auto;
+        line-height: 158%;
+        margin-top: 16px;
+    }
+    .kycForm .UploadDocSect .upload-btn-wrapper span{
+        height: 60px;
+        width: 60px;
+    }
+    .kycForm .UploadBtnBg{
+        height: 110px;
+    }
+}
+@media (max-width: 768px){
+    .Gamfi_Header_contentright {
+        margin-top: 24px;
+    }
+    .kycCountryDropbox, .KycRadioBtn, .kycForm button{
+        max-width: 100%;
+    }
+    .kycQrcodeSect{
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .kycQrcode_content h2{
+        text-align: center;
+    }
+    .TeamDetailsImg{
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    .TeamMembersInfo{
+        padding-left: 0px;
+    }
+    .kycForm .UploadDocSect ul, .UploadDocCheckList, .NidNumberSect form input{
+        max-width: 100%;
+    }
+    .kycForm{
+        padding: 20px 0px;
+    }
+    .KycYourDocumentsSect {
+        align-items: center;
+        margin-top: 40px;
+    }
+    .KycYourDocumentsContent h3{
+        text-align: center;
+    }
+    .RoadMapSect{
+        height: auto;
+    }
+    .RodmapConetentbox{
+        margin-top: 50px;
+    }
+    .RodmapLeftConetent{
+        justify-content: center;
+        align-items: center;
+        padding-right: 0px;
+    }
+    .RodmapRightConetent{
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+    }
+    .Roadmap2022{
+        margin-top: 100px;
+    }
+    .roadmap2021Divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        min-height: 450px;
+        top: -215px;
+        width: 50px;
+        background: url(../images/kycimg/Roadmap2021.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: rotate(270deg);
+    }
+    .roadmap2021Divider span {
+        transform: rotate(90deg);
+        font-size: 16px;
+    }
+    .roadmap2022Divider span {
+        font-size: 16px;
+    }
+
+    .roadmap2022Divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        min-height: 450px;
+        top: -215px;
+        width: 50px;
+        background: url(../images/kycimg/Roadmap2022.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: rotate(90deg);
+    }
+    .Roadmap2021{
+        margin-top: 40px;
+    }
+    
+    
+
+}
+@media only screen and (min-width: 575px) and (max-width: 619px){
+    .kycForm .UploadDocSect ul li h4 {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .sc-banner .banner-content .banner-title {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .sc-banner .banner-content .description {
+        font-size: 16px;
+        margin: 0 0 30px;
+    }
+    .view-more {
+        padding: 10px 20px 6px;
+        display: inline-block;
+    }
+    .sec-inner.d-flex,
+    .heading-area.d-flex{
+        display: block !important;
+        margin-bottom: 40px;
+    }
+    .gamfi-tokenomics-section .pr-63, .gamfi-tokenomics-section h5{
+        margin-bottom: 0;
+    }
+    .gamfi-footer-section .footer-listing .footer-icon-list i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin: 0 4px;
+        font-size: 15px;
+    }
+    .gamfi-footer-section .footer-cta-area .footer-link input[type="email"] {
+        padding: 12px 15px;
+    }
+    .project-summary-menu {
+        margin-bottom: 55px;
+    }
+    .gamfi-calendar-list .calender-date {
+        width: 48%;
+    }
+    .gamfi-breadcrumbs-section .breadcrumbs-form {
+        display: block;
+    }
+    .breadcrumbs-form .gamfi-navigation{
+        margin: 30px 0 0;
+    }
+    .breadcrumbs-form .gamfi-navigation ul li{
+        margin-right: 15px;
+    }
+    .breadcrumbs-form .gamfi-navigation ul{
+        justify-content: flex-start;
+    }
+    .gamfi-breadcrumbs-section .breadcrumbs-form input[type="text"] {
+        width: 100%;
+    }
+    .gamfi-breadcrumbs-section .breadcrumbs-form form{
+        margin: 0;
+    }
+    
+    .kycQrcodeImg {
+        height: 280px;
+        width: 280px;
+    }
+    .kycForm h3 {
+        font-size: 19px;
+    }
+    .kycForm p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .kycCountryDropbox h4 {
+        font-size: 14px;
+    }
+    .kycForm{
+        padding: 0px;
+    }
+    
+    .kycForm .UploadDocSect ul li h4{
+        width: 60%;
+        margin: auto;
+        line-height: 158%;
+        margin-top: 16px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .kycForm .UploadDocSect ul li h4 {
+        width: 100px;
+        margin: auto;
+        line-height: 158%;
+        margin-top: 16px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    body{
+        font-size: 15px;
+    }
+    .gamfi-header-section .logo {
+        margin-right: 30px;
+    }
+    .gamfi-header-section .white-btn{
+        display: none;
+    }
+    .footer-logo img,
+    .sidebar-logo img,
+    .gamfi-header-section .logo img{
+        max-width: 120px;
+    }
+    .gamfi-header-section .gamfi-btn-area ul .nav-expander {
+        margin-top: 0;
+    }
+    .sc-banner{
+        padding-top: 120px;
+    }
+    .gamfi-header-section .right_menu_togle {
+        padding: 66px 30px 50px 30px;
+    }
+    .gamfi-header-section .right_menu_togle .close-btn {
+        right: 0;
+    }
+    .gamfi-header-section .right_menu_togle {
+        max-width: 300px;
+    }
+    .sc-banner .banner-content .banner-title {
+        font-size: 24px;
+    }
+    .gamfi-project-section .gamfi-btn-area .readon,
+    .banner-btn {
+        padding: 9px 24px 8px;
+    }
+    .gamfi-about-secion .game-price-item {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .banner-slider-inner .timer ul li {
+        font-size: 26px;
+    }
+    .apply-heading h2,
+    .gamfi-footer-section .footer-cta-area .title, 
+    .sec-heading .title {
+        font-size: 22px;
+    }
+    .participat-information .project-value-inner{
+        display: block !important;
+    }
+    .gamfi-footer-section .footer-cta-form form,
+    .project-details-conent .banner-bottom-content,
+    .gamfi-previous-section .previous-item .previous-raise,
+    .gamfi-previous-section .previous-item .previous-gaming{
+        display: block;
+    }
+    .gamfi-previous-section .previous-item .previous-gaming .previous-image{
+        margin-bottom: 15px;
+    }
+    .gamfi-previous-section .previous-item .previous-raise .progress-inner{
+        margin-top: 10px;
+    }
+    .gamfi-explore-content .project-item h4{
+        font-size: 18px;
+    }
+    .gamfi-about-secion .game-price-item .price-details h3 {
+        font-size: 20px;
+    }
+    .gamfi-footer-section .footer-mainmenu ul li{
+        padding: 0 0 10px;
+    }
+    .gamfi-footer-section .footer-mainmenu ul li,
+    .gamfi-tokenomics-section .tokenomics-item,
+    .gamfi-project-section .project-item .project-info{
+        display: block !important;
+    }
+    .gamfi-project-section .project-item .project-info img{
+        margin: 0 0 10px;
+    }
+    .gamfi-tokenomics-section .tokenomics-menu{
+        padding: 0 0 20px;
+    }
+    .tokenomics-counter .counter-number {
+        font-size: 28px;
+    }
+    .sec-heading .heading-right-image,
+    .sec-heading .heading-left-image{
+        max-width: 60px;
+    }
+    .sec-heading .heading-right-image,
+    .sec-heading .heading-left-image,
+    .sec-heading .sub-title{
+        margin: 0;
+    }
+    .gamfi-footer-section .footer-listing .footer-icon-list i {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        margin: 0 2px;
+        font-size: 13px;
+    }
+    .gamfi-team-section .team-item {
+        margin-bottom: 20px;
+    }
+    .gamfi-form-content .address-form h5,
+    .gamfi-form-content .address-form .input-button label{
+        font-size: 13px;
+    }
+    .gamfi-explore-content .project-menu-area ul li,
+    .gamfi-calendar-list .calender-date{
+        width: 100%;
+    }
+    .gamfi-explore-content .project-menu-area ul{
+        display: block;
+    }
+    .gamfi-explore-content .project-item{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .gamfi-explore-content .project-item .heading-title h4:before {
+        left: -15px;
+    }
+    .gamfi-farming-content .expeand-centent {
+        padding: 20px 15px;
+    }
+    .gamfi-navigation ul li a:not(.black-shape) {
+        padding: 3px 12px;
+    }
+    .gamfi-navigation ul li:first-child a {
+        padding: 3px 12px 3px;
+    }
+    .gamfi-breadcrumbs-section .breadcrumbs-link,
+    .sec-heading .sub-title{
+        font-size: 15px;
+    }
+    .breadcrumbs-form .gamfi-navigation ul li:first-child a,
+    .gamfi-breadcrumbs-section .gamfi-navigation ul li a{
+        padding: 6px 15px;
+    }
+    .project-details-conent table{
+        display: block;
+        overflow-x: auto;
+    }
+    .project-details-conent table td {
+        font-size: 14px;
+    }
+    .participat-information .project-item h3 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .participat-information .project-item h4 {
+        font-size: 18px;
+    }
+    .project-details-conent .project-item .date-listing li label {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .project-details-conent .project-item .date-listing li{
+        display: block;
+    }
+    .project-details-conent .project-item .date-listing li + li{
+        margin-left: 0;
+    }
+    .project-details-conent .project-media li span {
+        float: none;
+        display: block;
+    }
+    .participat-information .project-value-inner .project-value{
+        margin-bottom: 10px;
+    }
+    .project-details-conent .project-item .project-form-list .balance-form-area .white-shape-small,
+    .project-details-conent .project-item .big-text {
+        position: static;
+    }
+    .gamfi-about-secion .game-price-item .text-content{
+        margin: 10px 0;
+    }
+    .gamfi-about-secion .game-price-item .social-icon-list,
+    .gamfi-about-secion .game-price-item .text-content{
+        text-align: left;
+    }
+    .gamfi-footer-section .footer-cta-form .footer-link input[type="email"]{
+        margin-bottom: 20px;
+    }
+    .gamfi-footer-section .footer-cta-form .footer-link input[type="email"],
+    .gamfi-about-secion .game-price-item .btn-area, 
+    .gamfi-about-secion .game-price-item .text-content, 
+    .gamfi-about-secion .game-price-item .social-area,
+    .project-details-conent .project-item .project-form-list .balance-form-area input,
+    .project-details-conent .project-item .project-form-list .balance-form-area input[type="submit"],
+    .project-details-conent .project-item .project-form-list .balance-form-area .approve input[type="submit"]{
+        width: 100%;
+    }
+    
+    .project-details-conent .project-item ul.date-listing {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .project-details-conent .project-item ul.date-listing li {
+        width: 24%;
+    }
+    .project-details-conent .project-item ul.date-listing li button {
+        font-size: 10px;
+        width: 100%;
+        height: 100%;
+        padding: 12px 0px;
+    }
+    .Gamfi_Header_ProgressBar .progress{
+        width: 290px;
+    }
+    .TeamMembersInfo h2{
+        font-size: 30px;
+    }
+    .TeamMembersInfo h3{
+        font-size: 20px;
+    }
+    .TeamMembersInfo p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .TeamMembersContact ul li strong{
+        font-size: 14px;
+        width: 120px;
+    }
+    .TeamMembersContact ul li span{
+        font-size: 14px;
+    }
+    .kycForm .UploadBtnBg{
+        height: 130px;
+    }
+    .kycForm .UploadDocSect .upload-btn-wrapper span{
+        height: 50px;
+        width: 50px;
+    }
+    
+    .kycPersonalinfoForm form .InputNameSect, .kycPersonalinfoForm form .InputAddressSect, .kycPersonalinfoForm form .InputCitySect{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .kycPersonalinfoForm form .InputNameSect .FirstNameFild, .kycPersonalinfoForm form .InputNameSect .LastNameFild, .kycPersonalinfoForm form .InputAddressSect .Address1Fild, .kycPersonalinfoForm form .InputAddressSect .Address2Fild, .kycPersonalinfoForm form .InputCitySect .CityFild, .kycPersonalinfoForm form .InputCitySect .PostCodeFild {
+        width: 100%;
+    }
+    .SignUp_SignIn_Form {
+        padding: 63px 20px 56px 20px;
+    }
+    .SignUp_SignIn_Form h4, .SignUp_SignIn_Form h4 a{
+        font-size: 14px;
+    }
+    .RodmapConetentbox1{
+        min-height: 158px;
+        background: url(../images/kycimg/roadMapcpntentBg1.svg);
+        background-position: right;
+        background-size: cover;
+    }
+    .RodmapConetentbox2{
+        min-height: 185px;
+        background: url(../images/kycimg/roadMapcpntentBg5.svg);
+        background-position: left;
+        background-size: cover;
+    }
+    .RodmapConetentbox3{
+        min-height: 158px;
+        background: url(../images/kycimg/roadMapcpntentBg2.svg);
+        background-position: right;
+        background-size: cover;
+    }
+    .RodmapConetentbox4{
+        min-height: 216px;
+        background: url(../images/kycimg/roadMapcpntentBg6.svg);
+        background-position: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .RodmapConetentbox5{
+        min-height: 260px;
+        background: url(../images/kycimg/roadMapcpntentBg3.svg);
+        background-position: right;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .RodmapConetentbox6 {
+        background: url(../images/kycimg/roadMapcpntentBg7.svg);
+        min-height: 230px;
+        background-position: left;
+        background-size: cover;
+        background-repeat: no-repeat; 
+    }
+    .RodmapConetentbox7{
+        min-height: 185px;
+        background: url(../images/kycimg/roadMapcpntentBg4.svg);
+        background-position: right;
+        background-size: cover;
+        background-repeat: no-repeat; 
+    }
+    
+    .roadmap2021Divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        min-height: 350px;
+        top: -170px;
+        width: 50px;
+        background: url(../images/kycimg/Roadmap2021.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: rotate(270deg);
+    }
+    .roadmap2022Divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        min-height: 350px;
+        top: -170px;
+        width: 50px;
+        background: url(../images/kycimg/Roadmap2022.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: rotate(90deg);
+    }
+    .roadmap2021Divider span {
+        font-size: 14px;
+    }
+    .roadmap2022Divider span {
+        font-size: 14px;
+    }
+    
+}
+@media (max-width: 375px) {
+    .modal-content {
+        background: #1E1F35;
+        padding: 30px 10px 5px;
+    }
+    .roadmap2021Divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        min-height: 280px;
+        top: -120px;
+        width: 50px;
+        background: url(../images/kycimg/Roadmap2021.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: rotate(270deg);
+    }
+    .roadmap2022Divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        min-height: 280px;
+        top: -120px;
+        width: 50px;
+        background: url(../images/kycimg/Roadmap2022.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: rotate(90deg);
+    }
+    .roadmap2021Divider span {
+        font-size: 12px;
+    }
+    .roadmap2022Divider span {
+        font-size: 12px;
+    }
+}
+@media (max-width: 360px){
+    .forgetPassBtnSect{
+        flex-direction: column;
+        align-items: flex-start;
+    }   
+    .forgetPassBtnSect .ForgetPass a {
+        margin-left: 25px;
+        margin-top: 16px;
+    }
+    .SignUp_SignIn_Form h4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+
+
